@@ -70,20 +70,20 @@ public class ProjectileCastHelper {
         Level world = caster.level();
 
         for (int i = 0; i < projectilesAmount; i++) {
-			float addYaw = 0;
-			Vec3 posAdd = new Vec3(0, 0, 0);
+            float addYaw = 0;
+            Vec3 posAdd = new Vec3(0, 0, 0);
 
-			if (projectilesAmount > 1) {
-				float offset = i - (float)(projectilesAmount - 1) / 2;
+            if (projectilesAmount > 1) {
+                float offset = i - (float)(projectilesAmount - 1) / 2;
 
-				if (this.castType == CastType.SPREAD_OUT_IN_RADIUS) {
-					// total cone is apart * (projectilesAmount - 1) / projectilesAmount
-					addYaw = offset * apart / projectilesAmount;
-				} else if (this.castType == CastType.SPREAD_OUT_HORIZONTAL) {
-					// 1m between each projectile
-					posAdd = getSideVelocity(caster).multiply(offset, offset, offset);
-				}
-			}
+                if (this.castType == CastType.SPREAD_OUT_IN_RADIUS) {
+                    // total cone is apart * (projectilesAmount - 1) / projectilesAmount
+                    addYaw = offset * apart / projectilesAmount;
+                } else if (this.castType == CastType.SPREAD_OUT_HORIZONTAL) {
+                    // 1m between each projectile
+                    posAdd = getSideVelocity(caster).multiply(offset, offset, offset);
+                }
+            }
             // copied from multishot crossbow code
             Vec3 vec31 = this.caster.getUpVector(1.0F);
             Quaternionf quaternionf = (new Quaternionf()).setAngleAxis((double) (addYaw * ((float) java.lang.Math.PI / 180F)), vec31.x, vec31.y, vec31.z);
