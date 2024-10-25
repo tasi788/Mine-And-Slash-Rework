@@ -129,24 +129,24 @@ public class SimpleProjectileEntity extends AbstractArrow implements IMyRenderAs
         this.setSoundEvent(SoundEvents.EMPTY);
     }
 
-	protected void moveToImpactPosition(HitResult result) {
+    protected void moveToImpactPosition(HitResult result) {
 
-		if (result instanceof EntityHitResult enres) {
-			// the result just contains entity position, so we must clip against the AABB ourselves
-			AABB aabb = enres.getEntity().getBoundingBox().inflate(0.3D);
-			Vec3 traceEnd = this.position().add(this.getDeltaMovement());
-			Optional<Vec3> clipped = aabb.clip(this.position(), traceEnd);
+        if (result instanceof EntityHitResult enres) {
+            // the result just contains entity position, so we must clip against the AABB ourselves
+            AABB aabb = enres.getEntity().getBoundingBox().inflate(0.3D);
+            Vec3 traceEnd = this.position().add(this.getDeltaMovement());
+            Optional<Vec3> clipped = aabb.clip(this.position(), traceEnd);
 
-			if (clipped.isPresent()) {
-				// move to where we hit the entity
-				this.setPos(clipped.get());
-			}
-		} else {
-			// move all the way to where we impacted
-			this.setPos(result.getLocation());
-		}
+            if (clipped.isPresent()) {
+                // move to where we hit the entity
+                this.setPos(clipped.get());
+            }
+        } else {
+            // move all the way to where we impacted
+            this.setPos(result.getLocation());
+        }
 
-	}
+    }
 
     public Entity getEntityHit(HitResult result, double radius) {
 
@@ -349,7 +349,7 @@ public class SimpleProjectileEntity extends AbstractArrow implements IMyRenderAs
 
     protected void onImpact(HitResult result) {
 
-		this.moveToImpactPosition(result);
+        this.moveToImpactPosition(result);
 
         Entity entityHit = getEntityHit(result, 0.3D);
 
