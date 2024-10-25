@@ -9,6 +9,7 @@ import com.robertx22.mine_and_slash.uncommon.utilityclasses.AllyOrEnemy;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.EntityFinder;
 import com.robertx22.library_of_exile.utils.geometry.MyPosition;
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -159,11 +160,8 @@ public class ProjectileCastHelper {
     }
 
     public Vec3 getSideVelocity(Entity shooter) {
-        float yaw = shooter.getYRot() - 90;
-        float x = -Math.sin(yaw * 0.017453292F) * Math.cos(shooter.getXRot() * 0.017453292F);
-        float y = -Math.sin((shooter.getXRot()) * 0.017453292F);
-        float z = Math.cos(yaw * 0.017453292F) * Math.cos(shooter.getXRot() * 0.017453292F);
-        return (new Vec3(x, y, z)).normalize();
+        float yaw = shooter.getYRot() * Mth.DEG_TO_RAD;
+        return new Vec3(Math.cos(yaw), 0, Math.sin(yaw));
     }
 
     public Vec3 geOppositeSideVelocity(Entity shooter) {
