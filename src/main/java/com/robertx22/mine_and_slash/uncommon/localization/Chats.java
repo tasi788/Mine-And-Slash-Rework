@@ -90,6 +90,7 @@ public enum Chats implements IAutoLocName {
     ENCHANT_UPGRADE_RARITY("Infusions must be applied consecutively. A common Infusion has to come before an uncommon Infusion may be applied."),
     THIS_ITEM_CANT_BE_USED_MORE_THAN_X_TIMES("This item has already reached maximum uses: (%1$s)"),
     NOT_GEAR("This is not a gear item."),
+    NOT_GEAR_OR_LACKS_SOUL("This is either not a gear item or the gear lacks a soul."),
     CANT_RUNE_THIS_UNIQUE("Can't insert Runes into this Unique"),
     RUNE_IS_ALREADY_MAXED("The inserted Rune is already at 100%. You can't to upgrade it any more."),
     GEAR_NO_POTENTIAL("Gear Has no remaining potential and Can't be crafted any further. Note, you can still use currencies that cost 0 potential to craft, like gems, runes etc."),
