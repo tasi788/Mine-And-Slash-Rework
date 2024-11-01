@@ -4,9 +4,12 @@ import com.robertx22.library_of_exile.main.ExileLog;
 import com.robertx22.mine_and_slash.maps.MapData;
 import com.robertx22.mine_and_slash.maps.generator.BuiltRoom;
 import com.robertx22.mine_and_slash.maps.generator.DungeonBuilder;
+import com.robertx22.mine_and_slash.mmorpg.MMORPG;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ServerLevelAccessor;
@@ -90,13 +93,30 @@ public class DungeonFeature {
             mapData.leagues.totalGenDungeonChunks++;
         }
 
-      
+
         BlockPos position = cpos.getBlockAt(0, 50, 0);
 
         generatePiece(world, position, random, room.data.rotation, room.getStructure());
 
-        return true;
+        if (!room.room.isBarrier) {
+            mapData.rooms.rooms.done++;
 
+            if (MMORPG.RUN_DEV_TOOLS_REMOVE_WHEN_DONE) {
+                for (Player p : world.players()) {
+                    p.sendSystemMessage(Component.literal(mapData.rooms.rooms.done + " out of " + mapData.rooms.rooms.total + " Explored"));
+
+                    if (mapData.rooms.isDoneGenerating()) {
+                        p.sendSystemMessage(Component.literal("Map Fully Generated"));
+                        p.sendSystemMessage(Component.literal("Rooms: " + mapData.rooms.rooms.total));
+                        p.sendSystemMessage(Component.literal("Mobs: " + mapData.rooms.mobs.total));
+                        p.sendSystemMessage(Component.literal("Chests: " + mapData.rooms.chests.total));
+
+                    }
+                }
+            }
+        }
+
+        return true;
 
     }
 

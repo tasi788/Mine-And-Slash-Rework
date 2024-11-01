@@ -56,12 +56,16 @@ public class MobBuilder {
         if (rarity != null) {
             Load.Unit(mob).setRarity(rarity.GUID());
         }
+
         Load.Unit(mob).isCorrectlySpawnedMapMob = true;
-        
+
+
         try {
             if (WorldUtils.isMapWorldClass(world)) {
                 var map = Load.mapAt(world, p);
                 Load.Unit(mob).mapUUID = map.map.uuid;
+                map.rooms.mobs.total++;
+
             }
         } catch (Exception e) {
             ModErrors.print(e);

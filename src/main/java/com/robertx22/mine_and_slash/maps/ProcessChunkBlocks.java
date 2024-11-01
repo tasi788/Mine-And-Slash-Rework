@@ -102,6 +102,7 @@ public class ProcessChunkBlocks {
                 if (map.mobs.isEmpty()) {
                     var mobs = ExileDB.MapMobs().getFilterWrapped(x -> builder.dungeon.tags.containsAny(x.possible_dungeon_tags.getTags(DungeonTag.SERIALIZER))).random();
                     map.mobs = mobs.GUID();
+                    map.rooms.rooms.total = builder.builtDungeon.amount;
                 }
 
                 for (ChunkPos cpos : terrainChunks) {
