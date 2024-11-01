@@ -111,6 +111,7 @@ public class ChunkCap implements ICap {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            ExileLog.get().warn("Mob Unloading/Loading Error");
         }
 
         return nbt;
@@ -139,6 +140,7 @@ public class ChunkCap implements ICap {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            ExileLog.get().warn("Mob Unloading/Loading Error");
         }
 
     }

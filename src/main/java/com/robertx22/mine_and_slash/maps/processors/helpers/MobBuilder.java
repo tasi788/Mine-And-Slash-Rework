@@ -1,7 +1,7 @@
 package com.robertx22.mine_and_slash.maps.processors.helpers;
 
 import com.robertx22.library_of_exile.utils.geometry.MyPosition;
-import com.robertx22.mine_and_slash.database.data.rarities.GearRarity;
+import com.robertx22.mine_and_slash.database.data.rarities.MobRarity;
 import com.robertx22.mine_and_slash.event_hooks.entity.OnMobSpawn;
 import com.robertx22.mine_and_slash.mmorpg.ModErrors;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
@@ -20,7 +20,7 @@ import java.util.function.Consumer;
 public class MobBuilder {
 
     private EntityType type;
-    public GearRarity rarity;
+    public MobRarity rarity;
     public int amount = 1;
 
     private MobBuilder() {

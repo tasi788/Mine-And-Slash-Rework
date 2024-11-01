@@ -655,6 +655,7 @@ public class DamageEvent extends EffectEvent {
 
     }
 
+    // reintroduce if i can't figure how to fix his dmg particle
     private void sendDamageParticle(DmgByElement info) {
 
         String text = "";

@@ -4,22 +4,22 @@ import com.robertx22.mine_and_slash.database.registry.ExileDB;
 import com.robertx22.mine_and_slash.maps.generator.ChunkProcessData;
 import com.robertx22.mine_and_slash.maps.processors.DataProcessor;
 import com.robertx22.mine_and_slash.maps.processors.helpers.MobBuilder;
-import com.robertx22.mine_and_slash.maps.spawned_map_mobs.SpawnedMob;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
+import com.robertx22.mine_and_slash.uncommon.interfaces.data_items.IRarity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.Level;
 
-public class EliteProcessor extends DataProcessor {
+public class MapBossProcessor extends DataProcessor {
 
-    public EliteProcessor() {
-        super("elite_mob");
+    public MapBossProcessor() {
+        super("map_boss");
     }
 
     @Override
     public boolean canSpawnLeagueMechanic() {
-        return true;
+        return false;
     }
 
     @Override
@@ -27,13 +27,14 @@ public class EliteProcessor extends DataProcessor {
 
         var map = Load.mapAt(world, pos);
 
-        EntityType<? extends Mob> type = SpawnedMob.random(map).getType();
+        EntityType<? extends Mob> type = ExileDB.BossArena().get(map.map.arena).getRandomBoss();
 
+        for (Mob en : MobBuilder.of(type, x -> {
+            x.rarity = ExileDB.MobRarities().get(IRarity.BOSS);
 
-        MobBuilder.of(type, x -> {
-            x.amount = 1;
-            x.rarity = ExileDB.MobRarities().getFilterWrapped(e -> e.is_elite).random();
-        }).summonMobs(world, pos);
+        }).summonMobs(world, pos)) {
 
+        }
     }
+
 }
