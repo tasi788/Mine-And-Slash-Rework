@@ -10,13 +10,13 @@ public class MapRarityRewardData {
 
     public int perc_to_unlock = 0;
     public ResourceLocation loot_table = new ResourceLocation("");
-    public float chest_chance = 0; // todo rework later to chest amount
-    public float loot_multi = 1; // todo lootinfo
+    public int reward_chests = 0; // todo rework later to chest amount
+    public float loot_multi = 1;
 
-    public MapRarityRewardData(int perc_to_unlock, ResourceLocation loot_table, float chest_chance, float loot_multi) {
+    public MapRarityRewardData(int perc_to_unlock, ResourceLocation loot_table, int reward_chests, float loot_multi) {
         this.perc_to_unlock = perc_to_unlock;
         this.loot_table = loot_table;
-        this.chest_chance = chest_chance;
+        this.reward_chests = reward_chests;
         this.loot_multi = loot_multi;
     }
 

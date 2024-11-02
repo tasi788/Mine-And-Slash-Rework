@@ -1,6 +1,5 @@
 package com.robertx22.mine_and_slash.maps.processors.reward;
 
-import com.robertx22.library_of_exile.utils.RandomUtils;
 import com.robertx22.mine_and_slash.database.registry.ExileDB;
 import com.robertx22.mine_and_slash.maps.generator.ChunkProcessData;
 import com.robertx22.mine_and_slash.maps.processors.DataProcessor;
@@ -22,7 +21,6 @@ public class MapRewardChestProcessor extends DataProcessor {
     @Override
     public void processImplementation(String key, BlockPos pos, Level world, ChunkProcessData data) {
         try {
-
             var map = Load.mapAt(world, pos);
 
             if (map == null) {
@@ -30,8 +28,7 @@ public class MapRewardChestProcessor extends DataProcessor {
             }
             var rar = ExileDB.GearRarities().get(map.completion_rarity);
 
-            if (!data.chanceChest && RandomUtils.roll(25)) {
-                data.chanceChest = true;
+            if (data.map_reward_chests++ < rar.map_reward.reward_chests) {
                 ChestProcessor.createChest(world, pos, false, rar.map_reward.loot_table);
             } else {
                 world.removeBlockEntity((pos)); // dont drop chest loot. this is a big problem if u remove this line

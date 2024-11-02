@@ -21,7 +21,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlac
 import org.codehaus.plexus.util.StringUtils;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public abstract class LeagueStructure {
 
@@ -81,7 +80,7 @@ public abstract class LeagueStructure {
         return pos.getY() >= startY() && pos.getY() <= (startY() + getYSize());
     }
 
-    public final void tryGenerate(ServerLevel level, ChunkPos pos, Random ran) {
+    public final void tryGenerate(ServerLevel level, ChunkPos pos) {
         try {
             var md = Load.mapAt(level, pos.getBlockAt(0, 0, 0));
 

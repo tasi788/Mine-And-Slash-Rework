@@ -124,14 +124,14 @@ public class ProcessChunkBlocks {
 
                             DungeonFeature.place(opt.get(), level, level.getRandom(), cpos.getBlockAt(0, 0, 0));
 
-                            BuiltRoom room = builder.builtDungeon.getRoomForChunk(cpos);
-
-                            var ran = DungeonBuilder.createRandom(0l, cpos);
+                            //BuiltRoom room = builder.builtDungeon.getRoomForChunk(cpos);
 
                             for (LeagueMechanic mech : opt.get().leagues.getLeagueMechanics()) {
-                                mech.getStructure(map.map).tryGenerate(level, cpos, ran);
-                                // todo maybe this is genning mobs too soon outside the league content??
-                                leagueSpawn(level, chunk, room); // for league mechanics we instantly gen the data because we need to know the spawn pos, which is gained by processing the spawn block..
+                                if (mech.gensRightAway(map)) {
+                                    mech.getStructure(map.map).tryGenerate(level, cpos);
+                                    // todo maybe this is genning mobs too soon outside the league content??
+                                    leagueSpawn(level, chunk); // for league mechanics we instantly gen the data because we need to know the spawn pos, which is gained by processing the spawn block..
+                                }
                             }
                             gened++;
                             if (gened >= maxtogen) {
@@ -158,7 +158,7 @@ public class ProcessChunkBlocks {
                             BuiltRoom room = builder.builtDungeon.getRoomForChunk(cpos);
 
                             // this will gen both the league mechs and the dungeon if it runs after the league mechs gen
-                            generateData(level, chunk, room);
+                            generateData(level, chunk);
 
                             map.leagues.processedChunks++;
 
@@ -191,10 +191,10 @@ public class ProcessChunkBlocks {
         }
     }
 
-    public static void generateData(ServerLevel level, LevelChunk chunk, BuiltRoom room) {
+    public static void generateData(ServerLevel level, LevelChunk chunk) {
 
 
-        ChunkProcessData data = new ChunkProcessData(chunk, room);
+        ChunkProcessData data = new ChunkProcessData(chunk);
 
 
         for (BlockPos tilePos : chunk.getBlockEntitiesPos()) {
@@ -236,10 +236,10 @@ public class ProcessChunkBlocks {
         }
     }
 
-    static void leagueSpawn(ServerLevel level, LevelChunk chunk, BuiltRoom room) {
+    public static void leagueSpawn(ServerLevel level, LevelChunk chunk) {
 
 
-        ChunkProcessData data = new ChunkProcessData(chunk, room);
+        ChunkProcessData data = new ChunkProcessData(chunk);
 
 
         for (BlockPos tilePos : chunk.getBlockEntitiesPos()) {
