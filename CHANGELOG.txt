@@ -13,6 +13,8 @@ v.5.8.4
 - rune stats have been slightly nerfed
 - rune and gem extractors are now datapack currencies and were slightly reworked
 - added experimental mob persistence to maps. they will now save and load back if unloaded, so dying/coming back to maps shouldnt mean mobs are gone
+- serverconfig is no longer needed for item compat, now you use "mmorpg:gear_slot_id" item tags. 
+So just list all sword items in the "mmorpg:sword" item tag.
 
 * Map Bosses!
 A lot of you said maps felt aimless and there was nothing to complete, finish etc.
