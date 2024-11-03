@@ -37,7 +37,6 @@ Another thing, dying will lower the completition %
 
 todo:
 - dying loss %
-- tp to boss when player ready, probably with an item and a tooltips
 - show player their current map complete % and rarity
 - FIX TRIPWIRE in arena
 - ADD BLOCK MODEL FOR REWARD TP

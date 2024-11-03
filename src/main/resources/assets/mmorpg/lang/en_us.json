@@ -608,6 +608,49 @@
 "_comment": " [CATEGORY]: DUNGEON - NAMES",
 
 
+"_comment": " [CATEGORY]: STATUSEFFECTS - NAMES",
+
+	"mmorpg.ailment.bleed": "Bleed",
+	"mmorpg.ailment.burn": "Burn",
+	"mmorpg.ailment.electrify": "Electrify",
+	"mmorpg.ailment.freeze": "Freeze",
+	"mmorpg.ailment.poison": "Poison",
+	"mmorpg.effect.agony": "Physical Agony",
+	"mmorpg.effect.blind": "Blind",
+	"mmorpg.effect.bone_chill": "Bone Chill",
+	"mmorpg.effect.charm": "Charm",
+	"mmorpg.effect.despair": "Despair of Chaos",
+	"mmorpg.effect.draconic_blood": "Dragon Blood",
+	"mmorpg.effect.endurance_charge": "Endurance Charge",
+	"mmorpg.effect.essence_of_frost": "Essence of Frost",
+	"mmorpg.effect.fire_golem_buff": "Fire Golem Buff",
+	"mmorpg.effect.frenzy_charge": "Frenzy Charge",
+	"mmorpg.effect.frost_lich": "Frost Lich",
+	"mmorpg.effect.gale_force": "Gale Force",
+	"mmorpg.effect.ground": "Grounding",
+	"mmorpg.effect.ice_golem_buff": "Ice Golem Buff",
+	"mmorpg.effect.inner_calm": "Inner Calm",
+	"mmorpg.effect.lightning_golem_buff": "Lightning Golem Buff",
+	"mmorpg.effect.mage_circle": "Mage Circle",
+	"mmorpg.effect.perseverance": "Perseverance",
+	"mmorpg.effect.petrify": "Petrify",
+	"mmorpg.effect.power_charge": "Power Charge",
+	"mmorpg.effect.rejuvenation": "Rejuvenation",
+	"mmorpg.effect.shred": "Shred",
+	"mmorpg.effect.slow": "Lethargy",
+	"mmorpg.effect.stun": "Stun",
+	"mmorpg.effect.taunt_stance": "Taunt Stance",
+	"mmorpg.effect.thorn": "Thorn",
+	"mmorpg.effect.undying_will": "Undying Will",
+	"mmorpg.effect.valor": "Valor",
+	"mmorpg.effect.vamp_blood": "Vamp Blood",
+	"mmorpg.effect.vigor": "Vigor",
+	"mmorpg.effect.weak": "Elemental Weakness",
+	"mmorpg.effect.wounds": "Wounds",
+
+"_comment": " [CATEGORY]: STATUSEFFECTS - NAMES",
+
+
 "_comment": " [CATEGORY]: CURRENCY ITEMS - NAMES",
 
 	"mmorpg.currency.affix_common_reroll": "Orb of New Beginnings",
@@ -678,49 +721,6 @@
 	"item.mmorpg.currency.upgrade_common_affix": "Orb of Fledgling's Reprieve",
 
 "_comment": " [CATEGORY]: CURRENCY ITEMS - NAMES",
-
-
-"_comment": " [CATEGORY]: STATUSEFFECTS - NAMES",
-
-	"mmorpg.ailment.bleed": "Bleed",
-	"mmorpg.ailment.burn": "Burn",
-	"mmorpg.ailment.electrify": "Electrify",
-	"mmorpg.ailment.freeze": "Freeze",
-	"mmorpg.ailment.poison": "Poison",
-	"mmorpg.effect.agony": "Physical Agony",
-	"mmorpg.effect.blind": "Blind",
-	"mmorpg.effect.bone_chill": "Bone Chill",
-	"mmorpg.effect.charm": "Charm",
-	"mmorpg.effect.despair": "Despair of Chaos",
-	"mmorpg.effect.draconic_blood": "Dragon Blood",
-	"mmorpg.effect.endurance_charge": "Endurance Charge",
-	"mmorpg.effect.essence_of_frost": "Essence of Frost",
-	"mmorpg.effect.fire_golem_buff": "Fire Golem Buff",
-	"mmorpg.effect.frenzy_charge": "Frenzy Charge",
-	"mmorpg.effect.frost_lich": "Frost Lich",
-	"mmorpg.effect.gale_force": "Gale Force",
-	"mmorpg.effect.ground": "Grounding",
-	"mmorpg.effect.ice_golem_buff": "Ice Golem Buff",
-	"mmorpg.effect.inner_calm": "Inner Calm",
-	"mmorpg.effect.lightning_golem_buff": "Lightning Golem Buff",
-	"mmorpg.effect.mage_circle": "Mage Circle",
-	"mmorpg.effect.perseverance": "Perseverance",
-	"mmorpg.effect.petrify": "Petrify",
-	"mmorpg.effect.power_charge": "Power Charge",
-	"mmorpg.effect.rejuvenation": "Rejuvenation",
-	"mmorpg.effect.shred": "Shred",
-	"mmorpg.effect.slow": "Lethargy",
-	"mmorpg.effect.stun": "Stun",
-	"mmorpg.effect.taunt_stance": "Taunt Stance",
-	"mmorpg.effect.thorn": "Thorn",
-	"mmorpg.effect.undying_will": "Undying Will",
-	"mmorpg.effect.valor": "Valor",
-	"mmorpg.effect.vamp_blood": "Vamp Blood",
-	"mmorpg.effect.vigor": "Vigor",
-	"mmorpg.effect.weak": "Elemental Weakness",
-	"mmorpg.effect.wounds": "Wounds",
-
-"_comment": " [CATEGORY]: STATUSEFFECTS - NAMES",
 
 
 "_comment": " [CATEGORY]: TALENTS - NAMES",
@@ -1574,6 +1574,10 @@
 	"mmorpg.stat.movement_spell_dmg_taken": "Movement Damage Taken",
 	"mmorpg.stat.negative_eff_dur_u_cast": "Negative Effect Duration",
 	"mmorpg.stat.non_crit_damage": "Non Critical Damage",
+	"mmorpg.stat.not_affected_by_cast_speed_cast_time": "Not affected by cast speed Cast Time",
+	"mmorpg.stat.not_affected_by_cast_speed_cdr": "Not affected by cast speed Spell Cooldown Reduction",
+	"mmorpg.stat.not_affected_by_cast_speed_spell_dmg": "Not affected by cast speed Spell Tag Damage",
+	"mmorpg.stat.not_affected_by_cast_speed_spell_dmg_taken": "Not affected by cast speed Damage Taken",
 	"mmorpg.stat.offensive_eff_dur_u_cast": "Offensive Effect Duration",
 	"mmorpg.stat.out_of_combat_regen": "Out of Combat Regen",
 	"mmorpg.stat.phys_to_all": "Physical to  Damage",
@@ -1622,6 +1626,7 @@
 	"mmorpg.stat.plus_lvl_minion_explode_spells": "To Minion explode Spells",
 	"mmorpg.stat.plus_lvl_missile_spells": "To Missile Spells",
 	"mmorpg.stat.plus_lvl_movement_spells": "To Movement Spells",
+	"mmorpg.stat.plus_lvl_not_affected_by_cast_speed_spells": "To Not affected by cast speed Spells",
 	"mmorpg.stat.plus_lvl_physical_spells": "To Physical Spells",
 	"mmorpg.stat.plus_lvl_projectile_spells": "To Projectile Spells",
 	"mmorpg.stat.plus_lvl_ranged_spells": "To Ranged Spells",
@@ -1886,21 +1891,6 @@
 "_comment": " [CATEGORY]: UNIQUE ITEMS - NAMES",
 
 
-"_comment": " [CATEGORY]: STATPRIORITY - NAMES",
-
-	"mmorpg.stat_priority.after_damage_bonuses": "AFTER_DAMAGE_BONUSES",
-	"mmorpg.stat_priority.before_damage_layers": "BEFORE_DAMAGE_LAYERS",
-	"mmorpg.stat_priority.before_hit_prevention": "BEFORE_HIT_PREVENTION",
-	"mmorpg.stat_priority.calc_damage_layers": "CALC_DAMAGE_LAYERS",
-	"mmorpg.stat_priority.damage_layers": "DAMAGE_LAYERS",
-	"mmorpg.stat_priority.data_modification": "DATA_MODIFICATION",
-	"mmorpg.stat_priority.final_damage": "FINAL_DAMAGE",
-	"mmorpg.stat_priority.first": "FIRST",
-	"mmorpg.stat_priority.hit_prevention": "HIT_PREVENTION",
-
-"_comment": " [CATEGORY]: STATPRIORITY - NAMES",
-
-
 "_comment": " [CATEGORY]: GEAR ITEMS - NAMES",
 
 	"item.mmorpg.jewelry.necklace.diamond": "Necklace",
@@ -1915,6 +1905,21 @@
 	"item.mmorpg.weapon.staff.wood": "Staff",
 
 "_comment": " [CATEGORY]: GEAR ITEMS - NAMES",
+
+
+"_comment": " [CATEGORY]: STATPRIORITY - NAMES",
+
+	"mmorpg.stat_priority.after_damage_bonuses": "AFTER_DAMAGE_BONUSES",
+	"mmorpg.stat_priority.before_damage_layers": "BEFORE_DAMAGE_LAYERS",
+	"mmorpg.stat_priority.before_hit_prevention": "BEFORE_HIT_PREVENTION",
+	"mmorpg.stat_priority.calc_damage_layers": "CALC_DAMAGE_LAYERS",
+	"mmorpg.stat_priority.damage_layers": "DAMAGE_LAYERS",
+	"mmorpg.stat_priority.data_modification": "DATA_MODIFICATION",
+	"mmorpg.stat_priority.final_damage": "FINAL_DAMAGE",
+	"mmorpg.stat_priority.first": "FIRST",
+	"mmorpg.stat_priority.hit_prevention": "HIT_PREVENTION",
+
+"_comment": " [CATEGORY]: STATPRIORITY - NAMES",
 
 
 "_comment": " [CATEGORY]: STAT LAYER - NAMES",
@@ -2514,6 +2519,7 @@
 	"mmorpg.tag.spell.minion_explode": "Minion explode",
 	"mmorpg.tag.spell.missile": "Missile",
 	"mmorpg.tag.spell.movement": "Movement",
+	"mmorpg.tag.spell.not_affected_by_cast_speed": "Not affected by cast speed",
 	"mmorpg.tag.spell.physical": "Physical",
 	"mmorpg.tag.spell.projectile": "Projectile",
 	"mmorpg.tag.spell.ranged": "Ranged",
@@ -3414,6 +3420,9 @@
 	"mmorpg.stat_desc.movement_cdr": "Reduces spell cooldown of spells with the tag.",
 	"mmorpg.stat_desc.movement_spell_dmg": "Increases damage of spells with this tag. Totem Damage increases dmg of totems, etc.",
 	"mmorpg.stat_desc.non_crit_damage": "If not a Critical, multiply by x",
+	"mmorpg.stat_desc.not_affected_by_cast_speed_cast_time": "Reduces cast time of spells with this tag",
+	"mmorpg.stat_desc.not_affected_by_cast_speed_cdr": "Reduces spell cooldown of spells with the tag.",
+	"mmorpg.stat_desc.not_affected_by_cast_speed_spell_dmg": "Increases damage of spells with this tag. Totem Damage increases dmg of totems, etc.",
 	"mmorpg.stat_desc.out_of_combat_regen": "Increases your out of combat regeneration",
 	"mmorpg.stat_desc.physical_cast_time": "Reduces cast time of spells with this tag",
 	"mmorpg.stat_desc.physical_cdr": "Reduces spell cooldown of spells with the tag.",
