@@ -27,16 +27,13 @@ Now, if you manage to kill the boss, it will spawn a teleport to the reward room
 The reward room will have a set amount of chests with added loot multipliers and better loot tables depending on your map completition %,
 that % will be represented in rarities up to mythic.
 
-Another thing, dying will lower the completition %
-
 
 - new datapack, boss arena
 - new fields to mob rarity datapacks
 - new field to gear rar datapack
+- uber frags now only drop from map bosses but have higher dropchance
 
 
 todo:
 - dying loss %
 - show player their current map complete % and rarity
-- FIX TRIPWIRE in arena
-- ADD BLOCK MODEL FOR REWARD TP
