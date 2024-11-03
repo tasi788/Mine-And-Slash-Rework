@@ -42,7 +42,8 @@ public class MapData {
 
     public String completion_rarity = IRarity.COMMON_ID;
 
-    
+    public boolean gave_boss_tp = false;
+
     public SpawnedMobList getMobSpawns() {
         return ExileDB.MapMobs().get(mobs);
     }

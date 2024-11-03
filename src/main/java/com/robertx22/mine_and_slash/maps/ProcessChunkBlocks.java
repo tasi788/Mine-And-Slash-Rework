@@ -13,14 +13,15 @@ import com.robertx22.mine_and_slash.maps.generator.DungeonBuilder;
 import com.robertx22.mine_and_slash.maps.processors.DataProcessor;
 import com.robertx22.mine_and_slash.maps.processors.DataProcessors;
 import com.robertx22.mine_and_slash.maps.processors.league.LeagueSpawnPos;
-import com.robertx22.mine_and_slash.mmorpg.MMORPG;
 import com.robertx22.mine_and_slash.tags.imp.DungeonTag;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
+import com.robertx22.mine_and_slash.uncommon.localization.Chats;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.WorldUtils;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -162,24 +163,30 @@ public class ProcessChunkBlocks {
 
                             map.leagues.processedChunks++;
 
-                            map.rooms.rooms.done++;
+                            if (!room.room.isBarrier) {
+                                map.rooms.rooms.done++;
 
-                            if (MMORPG.RUN_DEV_TOOLS_REMOVE_WHEN_DONE) {
-                                for (Player p : level.players()) {
-                                    p.sendSystemMessage(Component.literal(map.rooms.rooms.done + " out of " + map.rooms.rooms.total + " Explored"));
+                                var color = ChatFormatting.LIGHT_PURPLE;
+                                var tc = ChatFormatting.YELLOW;
+
+                                for (ServerPlayer p : level.getPlayers(x -> {
+                                    return MapData.getStartChunk(new ChunkPos(x.blockPosition())).equals(MapData.getStartChunk(start));
+                                })) {
+
+                                    p.sendSystemMessage(Chats.EXPLORED_X_MAP_ROOMS.locName(
+                                            Component.literal(map.rooms.rooms.done + "").withStyle(tc),
+                                            Component.literal(map.rooms.rooms.total + "").withStyle(tc)
+                                    ).withStyle(color));
 
                                     if (map.rooms.isDoneGenerating()) {
-                                        p.sendSystemMessage(Component.literal("Map Fully Generated"));
-                                        p.sendSystemMessage(Component.literal("Rooms: " + map.rooms.rooms.total));
-                                        p.sendSystemMessage(Component.literal("Mobs: " + map.rooms.mobs.total));
-                                        p.sendSystemMessage(Component.literal("Chests: " + map.rooms.chests.total));
-
+                                        p.sendSystemMessage(Chats.MAP_FINISHED_SPAWNING.locName().withStyle(ChatFormatting.DARK_PURPLE));
+                                        p.sendSystemMessage(Chats.TOTAL_MOBS.locName(map.rooms.mobs.total).withStyle(color));
+                                        p.sendSystemMessage(Chats.TOTAL_CHESTS.locName(map.rooms.chests.total).withStyle(color));
                                     }
                                 }
+
                             }
-
                         }
-
                         MobUnloading.loadBackMobs(level, cpos);
                     }
 

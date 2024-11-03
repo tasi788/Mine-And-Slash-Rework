@@ -81,7 +81,7 @@ public class OnServerTick {
                     }
 
                     if (player.tickCount % (20 * 5) == 0) {
-                        MapRarityRewardData.updateMapCompletionRarity(map);
+                        MapRarityRewardData.updateMapCompletionRarity(player, map);
 
                         //  var map = Load.mapAt(player.level(), player.blockPosition());
 
