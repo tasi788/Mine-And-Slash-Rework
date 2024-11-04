@@ -34,3 +34,8 @@ that % will be represented in rarities up to mythic.
 - new field to gear rar datapack
 - uber frags now only drop from map bosses but have higher dropchance
 
+
+v.5.9.2
+
+- fix phys to ele conversions not working
+- fix commands using perm lvl 3 instead of 2
