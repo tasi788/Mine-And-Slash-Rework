@@ -12,8 +12,11 @@ public class MobUnloading {
     public static void onUnloadMob(LivingEntity en) {
         try {
             if (WorldUtils.isMapWorldClass(en.level())) {
-                var chunk = en.level().getChunkAt(en.blockPosition());
-                Load.chunkData(chunk).trySaveMob(en);
+                var cp = new ChunkPos(en.blockPosition());
+                if (en.level().hasChunk(cp.x, cp.z)) {
+                    var chunk = en.level().getChunkAt(en.blockPosition());
+                    Load.chunkData(chunk).trySaveMob(en);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -23,8 +26,11 @@ public class MobUnloading {
     public static void loadBackMobs(Level level, ChunkPos cp) {
         try {
             if (WorldUtils.isMapWorldClass(level)) {
-                var chunk = level.getChunk(cp.x, cp.z);
-                Load.chunkData(chunk).tryLoadMobs(level);
+                // we dont want to force load chunks
+                if (level.hasChunk(cp.x, cp.z)) {
+                    var chunk = level.getChunk(cp.x, cp.z);
+                    Load.chunkData(chunk).tryLoadMobs(level);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
