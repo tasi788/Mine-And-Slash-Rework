@@ -37,3 +37,8 @@ that % will be represented in rarities up to mythic.
 todo:
 - dying loss %
 - show player their current map complete % and rarity
+- nerf map drops a bit cus i added like 10 chests after every map and a boss fight
+
+
+map options:
+add item that generates a white map
