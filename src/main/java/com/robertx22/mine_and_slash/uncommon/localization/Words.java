@@ -7,7 +7,7 @@ import java.util.Locale;
 
 // to use a "%" here, do %% or '%'
 public enum Words implements IAutoLocName {
-    OPTION_LOCKED("Option Locked"),
+    OPTION_LOCKED("Option Locked Until Map Boss is Killed."),
 
     UPGRADE_MAP("Upgrade Map Rarity"),
     DOWNGRADE_MAP("Downgrade Map Rarity"),

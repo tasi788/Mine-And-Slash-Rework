@@ -81,8 +81,8 @@ public class MapItemData implements ICommonDataItem<GearRarity> {
 
 
     public void setRarityAndRerollNeeded(GearRarity rar) {
-        int current = this.affixes.size();
-        int needed = rar.min_affixes;
+        //int current = this.affixes.size();
+        //int needed = rar.min_affixes;
 
         this.rar = rar.GUID();
 

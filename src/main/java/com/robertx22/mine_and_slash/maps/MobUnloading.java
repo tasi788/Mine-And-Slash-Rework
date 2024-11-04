@@ -8,7 +8,6 @@ import net.minecraft.world.level.Level;
 
 public class MobUnloading {
 
-    // todo make sure it cant be saved twice
     public static void onUnloadMob(LivingEntity en) {
         try {
             if (WorldUtils.isMapWorldClass(en.level())) {
