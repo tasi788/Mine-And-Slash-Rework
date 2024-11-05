@@ -39,3 +39,7 @@ v.5.9.2
 
 - fix phys to ele conversions not working
 - fix commands using perm lvl 3 instead of 2
+
+v.5.9.3
+
+- fix server crash
