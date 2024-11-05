@@ -43,3 +43,8 @@ v.5.9.2
 v.5.9.3
 
 - fix server crash
+
+v.5.9.4
+
+- fix currencies not going into master bag
+- fix spells being castable without being learned

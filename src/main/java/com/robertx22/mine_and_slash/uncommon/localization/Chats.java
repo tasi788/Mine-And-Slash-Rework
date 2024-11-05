@@ -167,6 +167,7 @@ public enum Chats implements IAutoLocName {
     WEAPON_REQ_NOT_MET("Weapon requirements not met"),
     ENEMY_TOO_CLOSE("Can't do that. There are enemies nearby."),
     CANT_TP_TO_BOSS("You need to explore more of the map before you can enter the Boss Arena."),
+    THIS_IS_ONLY_USABLE_INSIDE_A_MAP("Only usable inside the Map."),
     GEM_SOCKETED("Gem Socketed"),
     LEVEL_UP_MESSAGE_UP("Leveled Up!"),
     LEVEL_UP_MESSAGE_DOWN("%1$s Level: %2$s > %3$s!");

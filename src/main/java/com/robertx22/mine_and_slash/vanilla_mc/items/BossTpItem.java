@@ -55,6 +55,9 @@ public class BossTpItem extends AutoItem {
                 LeagueTeleportBlock.teleportToLeague(p, p.blockPosition(), LeagueMechanics.MAP_BOSS_ID);
 
                 return InteractionResultHolder.success(p.getItemInHand(pUsedHand));
+            } else {
+                p.sendSystemMessage(Chats.THIS_IS_ONLY_USABLE_INSIDE_A_MAP.locName());
+                return InteractionResultHolder.pass(p.getItemInHand(pUsedHand));
             }
         }
         return InteractionResultHolder.pass(p.getItemInHand(pUsedHand));
