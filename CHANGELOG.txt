@@ -1,6 +1,14 @@
 Changelog of recent updates: https://github.com/RobertSkalko/Mine-And-Slash-Rework/blob/1.20-Forge/changelogs/v.5.9.txt
 
-v.5.9.4
+v.5.9.5
 
-- fix currencies not going into master bag
-- fix spells being castable without being learned
+- removed mob persistence in maps to attempt to fix lag issues. (delete old map world save to actually test it)
+- fix unique stat ranges showing wrong
+- mobs now despawn more strictly in maps, whenever you are too far away
+- added MOB_DESPAWN_DISTANCE_IN_MAPS config
+- removed mob persistence configs, replaced with despawn distance config
+- remember the mobs are still loaded back with the mob new mob save feature
+- mob hp now has dots
+- fixed unlearning spell schools
+- fixed mob hp being double 
+- fixed mobs having too much resists

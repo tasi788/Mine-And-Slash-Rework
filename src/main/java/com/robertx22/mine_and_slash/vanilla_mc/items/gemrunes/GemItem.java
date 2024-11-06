@@ -168,12 +168,13 @@ public class GemItem extends BaseGemItem implements IGUID, IAutoModel, IItemAsCu
 
                 //int runes = (int) data.sockets.getSocketed().stream().filter(x -> x.isRune()).count();
                 int gems = (int) data.sockets.getSocketed().stream().filter(x -> x.isGem()).count();
-                if (gems > rar.max_gems) {
-                    if (rar.max_gems > 0) {
+
+                if (rar.max_gems > 0) {
+                    if (gems >= rar.max_gems) {
                         return ExplainedResult.failure(Chats.RARITY_CANT_HAVE_MORE_THAN_X_GEMS.locName(rar.coloredName(), rar.max_gems));
-                    } else {
-                        return ExplainedResult.failure(Chats.RARITY_CANT_HAVE_ANY_GEMS.locName(rar.coloredName()));
                     }
+                } else {
+                    return ExplainedResult.failure(Chats.RARITY_CANT_HAVE_ANY_GEMS.locName(rar.coloredName()));
                 }
 
 
