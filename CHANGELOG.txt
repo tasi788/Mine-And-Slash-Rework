@@ -15,3 +15,4 @@ v.5.9.5
 - give points cheatpoints now bypasses caps
 - attempt to fix some spells not hitting enough times
 - fixed infusions
+- fixed passive points showing as ascendancy points under list stat sources command

@@ -64,6 +64,7 @@ public class BossTpItem extends AutoItem {
     }
 
     public static boolean canTeleportToArena(Player p) {
+     
         var map = Load.mapAt(p.level(), p.blockPosition());
 
         if (map == null) {
@@ -78,7 +79,8 @@ public class BossTpItem extends AutoItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+    public void appendHoverText(ItemStack pStack, @Nullable Level
+            pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.addAll(splitLongText(Itemtips.BOSS_TELEPORT_ITEM.locName().withStyle(ChatFormatting.RED)));
     }
 

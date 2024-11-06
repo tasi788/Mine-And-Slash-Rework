@@ -180,7 +180,7 @@ public class SpellSchoolsData implements IStatCtx {
                 }
             }
         }
-        return Arrays.asList(new SimpleStatCtx(StatContext.StatCtxType.ASCENDANCY, stats));
+        return Arrays.asList(new SimpleStatCtx(StatContext.StatCtxType.PASSIVES, stats));
     }
 
 }
