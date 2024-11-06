@@ -237,10 +237,9 @@ public class DamageEvent extends EffectEvent {
 
         WeaponTypes weaponType = data.getWeaponType();
 
-        if (weaponType.isMelee()) {
+        if (weaponType.isMelee() && !isSpell()) {
 
             if (this.source instanceof Player) {
-
 
                 var wep = this.sourceData.equipmentCache.getWeapon();
                 if (wep != null) {

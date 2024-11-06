@@ -65,3 +65,8 @@ v.5.9.5
 - attempt to fix some spells not hitting enough times
 - fixed infusions
 - fixed passive points showing as ascendancy points under list stat sources command
+
+v.5.9.6
+
+- removed break chest in maps feature
+- melee cooldown no longer applies to spells
