@@ -202,7 +202,7 @@ public class PlayerCommands {
                 var data = Load.player(p).points.get(type);
 
                 data.resetBonusPoints();
-
+            
                 p.sendSystemMessage(Chats.RESET_POINTS.locName(type.word().locName()));
             });
 

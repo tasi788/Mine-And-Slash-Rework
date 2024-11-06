@@ -40,10 +40,11 @@ public class OnEntityTick {
 
             if (entity instanceof Player == false) {
                 if (WorldUtils.isMapWorldClass(entity.level())) {
-                    if (!Load.Unit(entity).getEntity().equals(IRarity.BOSS)) {
+                    if (!Load.Unit(entity).getRarity().equals(IRarity.BOSS)) {
 
-                        if (entity.tickCount > (20 * 15) && entity.tickCount % 100 == 0) {
+                        if (entity.tickCount > (20 * 12) && entity.tickCount % 40 == 0) {
                             int distance = ServerContainer.get().MOB_DESPAWN_DISTANCE_IN_MAPS.get().intValue();
+
 
                             Entity nearestPlayer = entity.level().getNearestPlayer(entity, -1.0D);
 

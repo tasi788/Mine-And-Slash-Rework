@@ -25,7 +25,6 @@ import com.robertx22.mine_and_slash.database.data.stats.types.resources.energy.E
 import com.robertx22.mine_and_slash.database.data.stats.types.resources.health.HealthRegen;
 import com.robertx22.mine_and_slash.database.data.stats.types.resources.mana.ManaRegen;
 import com.robertx22.mine_and_slash.database.registry.ExileDB;
-import com.robertx22.mine_and_slash.itemstack.ExileStack;
 import com.robertx22.mine_and_slash.itemstack.StackKeys;
 import com.robertx22.mine_and_slash.mmorpg.SlashRef;
 import com.robertx22.mine_and_slash.mmorpg.registers.common.items.GemItems;
@@ -158,7 +157,8 @@ public class GemItem extends BaseGemItem implements IGUID, IAutoModel, IItemAsCu
             }
 
             @Override
-            public ExplainedResult canBeModified(ExileStack stack) {
+            public ExplainedResult canBeModified(LocReqContext c) {
+                var stack = c.stack;
                 var data = stack.get(StackKeys.GEAR).get();
 
                 if (data.getEmptySockets() < 1) {

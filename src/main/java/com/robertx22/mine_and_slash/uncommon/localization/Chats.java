@@ -97,6 +97,7 @@ public enum Chats implements IAutoLocName {
 
     NOT_FAMILY("Can't be applied to an item of that slot family."),
     ENCHANT_UPGRADE_RARITY("Infusions must be applied consecutively. A common Infusion has to come before an uncommon Infusion may be applied."),
+    ENCHANT_UPGRADE_RARITY_CANT_SAME("The Infusion on the item is already of this rarity. Use a higher rarity Infusion"),
     THIS_ITEM_CANT_BE_USED_MORE_THAN_X_TIMES("This item has already reached maximum uses: (%1$s)"),
     NOT_GEAR("This is not a gear item."),
     NOT_GEAR_OR_LACKS_SOUL("This is either not a gear item or the gear lacks a soul."),

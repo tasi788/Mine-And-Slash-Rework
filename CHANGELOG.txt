@@ -12,3 +12,6 @@ v.5.9.5
 - fixed unlearning spell schools
 - fixed mob hp being double 
 - fixed mobs having too much resists
+- give points cheatpoints now bypasses caps
+- attempt to fix some spells not hitting enough times
+- fixed infusions
