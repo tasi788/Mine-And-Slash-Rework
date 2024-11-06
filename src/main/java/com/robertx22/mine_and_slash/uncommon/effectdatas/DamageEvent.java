@@ -653,6 +653,12 @@ public class DamageEvent extends EffectEvent {
 
             // target.invulnerableTime = 20;
 
+            if (attackInfo == null) {
+                if (target instanceof Player == false) {
+                    target.invulnerableTime = 0;
+                }
+            }
+
         }
 
     }
