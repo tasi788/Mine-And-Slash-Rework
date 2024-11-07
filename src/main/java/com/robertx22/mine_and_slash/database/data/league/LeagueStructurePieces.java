@@ -20,8 +20,8 @@ public class LeagueStructurePieces implements IWeighted {
         try {
             ChunkPos start = MapData.getStartChunk(pos.getMiddleBlockPosition(50));
             ChunkPos relative = new ChunkPos(pos.x - start.x, pos.z - start.z);
-            int x = Math.abs(relative.x);
-            int z = Math.abs(relative.z);
+            int x = relative.x;
+            int z = relative.z;
 
             if (isWithinBounds(x, z)) {
                 return SlashRef.id("league/" + folder + "/" + x + "_" + z);
