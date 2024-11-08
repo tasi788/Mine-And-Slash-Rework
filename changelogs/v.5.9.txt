@@ -93,3 +93,9 @@ v.5.9.9
 - renamed learn x spell stat to level to spell
 - fixed prof lvls tooltip going off screen
 - removed vanilla_rar_enum  from gear rar datapacks, hardcoded temporarily cus of a lag bug
+
+v.5.9.10
+
+- omens are now repairable
+- spells now show that their support gems also benefit another spell (if they do)
+- fixed pet spells all being called Fire Golem Attack

@@ -31,7 +31,7 @@ public class DungeonFeature {
                 .setIgnoreEntities(false);
 
         settings.setBoundingBox(settings.getBoundingBox());
-     
+
         if (template == null) {
             ExileLog.get().warn("FATAL ERROR: Structure does not exist (" + id + ")");
             return false;
@@ -55,7 +55,7 @@ public class DungeonFeature {
             settings.setRotation(Rotation.NONE);
         }
 
-
+        // Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE is experimental thing that should reduce updatenighbor block lag in map generation
         var done = template.placeInWorld((ServerLevelAccessor) world, position, position, settings, random, Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE);
 
         return done;
