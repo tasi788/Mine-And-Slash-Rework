@@ -3,5 +3,6 @@ Changelog of recent updates: https://github.com/RobertSkalko/Mine-And-Slash-Rewo
 v.5.9.9
 
 - attempt to fix map gen lag
-- updated rarity datapacks (update the vanilla_rar field)
 - renamed learn x spell stat to level to spell
+- fixed prof lvls tooltip going off screen
+- removed vanilla_rar_enum  from gear rar datapacks, hardcoded temporarily cus of a lag bug
