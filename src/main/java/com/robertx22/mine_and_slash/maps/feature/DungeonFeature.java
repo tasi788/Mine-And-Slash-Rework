@@ -31,8 +31,7 @@ public class DungeonFeature {
                 .setIgnoreEntities(false);
 
         settings.setBoundingBox(settings.getBoundingBox());
-
-
+     
         if (template == null) {
             ExileLog.get().warn("FATAL ERROR: Structure does not exist (" + id + ")");
             return false;

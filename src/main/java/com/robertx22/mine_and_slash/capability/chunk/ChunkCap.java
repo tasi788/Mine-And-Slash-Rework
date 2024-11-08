@@ -74,8 +74,6 @@ public class ChunkCap implements ICap {
                     });
 
                     world.addFreshEntity(en);
-
-                    //  world.addFreshEntity(en); seems the above method actually spawns them too
                 }
             } catch (Exception e) {
                 e.printStackTrace();
