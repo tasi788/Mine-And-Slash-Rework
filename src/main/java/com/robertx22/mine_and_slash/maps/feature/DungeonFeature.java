@@ -57,8 +57,9 @@ public class DungeonFeature {
         }
 
 
-        return template.placeInWorld((ServerLevelAccessor) world, position, position, settings, random, Block.UPDATE_CLIENTS);
+        var done = template.placeInWorld((ServerLevelAccessor) world, position, position, settings, random, Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE);
 
+        return done;
     }
 
     private static boolean generateStructure(MapData mapData, LevelAccessor world, ChunkPos cpos, RandomSource random) {
@@ -103,7 +104,7 @@ public class DungeonFeature {
             if (chunk instanceof LevelChunk lc) {
                 Load.chunkData(lc).roomCreated = true;
             }
-    
+
         }
 
         return true;
