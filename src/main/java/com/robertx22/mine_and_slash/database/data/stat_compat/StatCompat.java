@@ -36,6 +36,10 @@ public class StatCompat implements JsonExileRegistry<StatCompat>, IAutoGson<Stat
     public float conversion = 0.5F;
     public int minimum_cap = 0;
     public int maximum_cap = 100;
+
+    public int per_item_min = 0;
+    public int per_item_max = 100;
+
     public ModType mod_type = ModType.PERCENT;
 
     public StatCompat(String id) {
@@ -79,11 +83,11 @@ public class StatCompat implements JsonExileRegistry<StatCompat>, IAutoGson<Stat
                 continue;
             }
             int val = (int) (enchlvl * conversion);
-            value += MathHelper.clamp(val, minimum_cap, maximum_cap);
+            value += MathHelper.clamp(val, per_item_min, per_item_max);
         }
 
         if (value != 0) {
-            MathHelper.clamp(value, minimum_cap, maximum_cap);
+            value = MathHelper.clamp(value, minimum_cap, maximum_cap);
             value = (int) scaling.scale(value, lvl);
             var data = ExactStatData.noScaling(value, mod_type, mns_stat_id);
             return data;
