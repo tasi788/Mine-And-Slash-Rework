@@ -20,6 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class StatCompat implements JsonExileRegistry<StatCompat>, IAutoGson<StatCompat> {
@@ -62,27 +63,33 @@ public class StatCompat implements JsonExileRegistry<StatCompat>, IAutoGson<Stat
         return !enchant_id.isEmpty();
     }
 
-    public ExactStatData getEnchantCompatResult(ItemStack stack, int lvl) {
+
+    public ExactStatData getEnchantCompatResult(List<ItemStack> stacks, int lvl) {
         if (ExileDB.Stats().get(mns_stat_id) instanceof AttributeStat) {
             return null;
         }
-
         Enchantment ench = ForgeRegistries.ENCHANTMENTS.getValue(new ResourceLocation(enchant_id));
-        int enchlvl = stack.getEnchantmentLevel(ench);
 
-        if (enchlvl < 1) {
-            return null;
+        float value = 0;
+
+        for (ItemStack stack : stacks) {
+            int enchlvl = stack.getEnchantmentLevel(ench);
+
+            if (enchlvl < 1) {
+                continue;
+            }
+            int val = (int) (enchlvl * conversion);
+            value += MathHelper.clamp(val, minimum_cap, maximum_cap);
         }
 
-        int val = (int) (enchlvl * conversion);
-        int value = MathHelper.clamp(val, minimum_cap, maximum_cap);
-
         if (value != 0) {
+            MathHelper.clamp(value, minimum_cap, maximum_cap);
             value = (int) scaling.scale(value, lvl);
             var data = ExactStatData.noScaling(value, mod_type, mns_stat_id);
             return data;
+        } else {
+            return null;
         }
-        return null;
     }
 
     public ExactStatData getResult(LivingEntity en, int lvl) {

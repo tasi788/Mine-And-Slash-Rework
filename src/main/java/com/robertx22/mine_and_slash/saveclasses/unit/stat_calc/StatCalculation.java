@@ -179,7 +179,9 @@ public class StatCalculation {
         if (entity instanceof Player p) {
             statContexts.addAll(Load.player(p).cachedStats.statContexts);
             statContexts.add(Load.player(p).cachedStats.getStatCompatStats());
-
+            if (Load.player(p).cachedStats.enchantCompat != null) {
+                statContexts.add(Load.player(p).cachedStats.enchantCompat);
+            }
             var omen = Load.player(p).cachedStats.omenStats;
             if (omen != null) {
                 statContexts.add(omen);

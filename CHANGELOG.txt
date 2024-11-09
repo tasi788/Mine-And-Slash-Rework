@@ -7,3 +7,4 @@ v.5.9.11
 - added is_optional field to spell conditions, optional conditions work as "any"
 3 optionals and 1 passes: works
 2 optionals and 1 non optional, if the non-optional fails, it wont work, even if the optionals pass
+- enchant compat caps are now per player (might be buggy)
