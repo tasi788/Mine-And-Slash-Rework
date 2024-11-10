@@ -158,6 +158,16 @@ public class StatCalculation {
             if (!stats.isEmpty()) {
                 statContexts.add(new SimpleStatCtx(StatContext.StatCtxType.INNATE_SPELL, stats));
             }
+
+            if (spell.config.usesSupportGemsFromAnotherSpell()) {
+                var other = spell.config.getSpellUsedForSuppGems();
+                var stats2 = other.getStats(p);
+
+                if (!stats2.isEmpty()) {
+                    statContexts.add(new SimpleStatCtx(StatContext.StatCtxType.INNATE_SPELL, stats2));
+                }
+            }
+
         }
         return statContexts;
     }
