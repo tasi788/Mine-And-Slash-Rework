@@ -11,3 +11,4 @@ v.5.9.11
 - added per_item_max and min to enchant compat to still be able to cap stuff per item
 - tried to fix map item config bans not working
 - fixed item_mod command to actually work
+- map upgrade screen should show fail reason now correctly 

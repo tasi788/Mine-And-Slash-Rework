@@ -2736,6 +2736,7 @@
 	"mmorpg.word.major": "Major",
 	"mmorpg.word.mana_cost": "Mana Cost: %1$s",
 	"mmorpg.word.map": "Map",
+	"mmorpg.word.map_is_already_max_rarity": "Map is already at Maximum Rarity.",
 	"mmorpg.word.map_res_req_lack_dmg_multi": "Player Lacking Map Resist Requirement DMG-Multi",
 	"mmorpg.word.mapdesc": "Items used to travel to a Dungeon Dimension using the Map Device.",
 	"mmorpg.word.maps": "Maps",
@@ -2758,6 +2759,7 @@
 	"mmorpg.word.new_character": "Create Character",
 	"mmorpg.word.new_character_desc": "Creates New Character\n\nName Must be Unique",
 	"mmorpg.word.no_item_found": "\n- %1$s is missing",
+	"mmorpg.word.no_map_to_upgrade": "You don't have any map currently.",
 	"mmorpg.word.noduplicatesockets": "No Duplicate Sockets",
 	"mmorpg.word.none": "None",
 	"mmorpg.word.normal_gear": "Normal Gear",
@@ -2768,7 +2770,7 @@
 	"mmorpg.word.nothing": "Nothing",
 	"mmorpg.word.on_slots": "Slots: ",
 	"mmorpg.word.only_show_allocated": "Only Show Allocated Talents, Toggle ON/OFF",
-	"mmorpg.word.option_locked": "Option Locked Until Map Boss is Killed.",
+	"mmorpg.word.option_locked_until_boss_killed": "Option Locked Until Map Boss is Killed.",
 	"mmorpg.word.passive": "Passive",
 	"mmorpg.word.per_stack": " (per stack): ",
 	"mmorpg.word.pet_basic": "Pet Basic Attack:",
@@ -2865,18 +2867,6 @@
 "_comment": " [CATEGORY]: WORDS - NAMES",
 
 
-"_comment": " [CATEGORY]: CHAOS STAT - NAMES",
-
-	"mmorpg.chaos_stat.normal_high": "Ascended",
-	"mmorpg.chaos_stat.normal_low": "Upgraded",
-	"mmorpg.chaos_stat.normal_med": "Elevated",
-	"mmorpg.chaos_stat.unique_high": "Ascended",
-	"mmorpg.chaos_stat.unique_low": "Upgraded",
-	"mmorpg.chaos_stat.unique_med": "Elevated",
-
-"_comment": " [CATEGORY]: CHAOS STAT - NAMES",
-
-
 "_comment": " [CATEGORY]: OMENS - NAMES",
 
 	"mmorpg.omen.blood": "Omen of Blood",
@@ -2889,6 +2879,18 @@
 	"mmorpg.omen.waves": "Omen of Waves",
 
 "_comment": " [CATEGORY]: OMENS - NAMES",
+
+
+"_comment": " [CATEGORY]: CHAOS STAT - NAMES",
+
+	"mmorpg.chaos_stat.normal_high": "Ascended",
+	"mmorpg.chaos_stat.normal_low": "Upgraded",
+	"mmorpg.chaos_stat.normal_med": "Elevated",
+	"mmorpg.chaos_stat.unique_high": "Ascended",
+	"mmorpg.chaos_stat.unique_low": "Upgraded",
+	"mmorpg.chaos_stat.unique_med": "Elevated",
+
+"_comment": " [CATEGORY]: CHAOS STAT - NAMES",
 
 
 "_comment": " [CATEGORY]: LOOTMODIFIER - NAMES",
