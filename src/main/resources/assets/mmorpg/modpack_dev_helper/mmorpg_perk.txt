@@ -592,6 +592,7 @@ taunt
 teleport
 test_command
 test_spell
+testfalse
 thorn_bush
 tidal_strike
 tormentor

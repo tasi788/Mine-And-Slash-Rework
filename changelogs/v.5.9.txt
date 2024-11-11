@@ -131,3 +131,9 @@ v.5.9.12
 	- see your total map complete % 
 	- see the map item to check affixes etc again
 	- screen is still wip! 
+	
+	
+v.5.9.13
+
+- stop professions from being able to overlevel past level cap
+- fix server crash on stat calc
