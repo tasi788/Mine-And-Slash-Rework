@@ -131,9 +131,15 @@ v.5.9.12
 	- see your total map complete % 
 	- see the map item to check affixes etc again
 	- screen is still wip! 
-	
-	
+		
 v.5.9.13
 
 - stop professions from being able to overlevel past level cap
 - fix server crash on stat calc
+
+v.5.9.14
+
+- turned unbound key text into empty string, unsure what's best
+- boss tp is now gui button, not an item
+- map upgrade is now activated through map upgrade gui when outside of a map
+- adjusted lvl distance punishment leeeway code
