@@ -1,5 +1,8 @@
 Changelog of recent updates: https://github.com/RobertSkalko/Mine-And-Slash-Rework/blob/1.20-Forge/changelogs/v.5.9.txt
 
-v.5.9.15
+v.5.9.16
 
-- should fix more prophecy bugs where items are given rarities they shouldn't possibly be able to have
+- maps are now crafted instead of dropped. 
+Basically instead of getting maps randomly as drops, you now craft a common map for cheap and can upgrade your map for free if you kill the boss in it.
+- you no longer heal in the void
+- map loot chest removed

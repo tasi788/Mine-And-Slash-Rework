@@ -45,7 +45,7 @@ public class ServerContainer {
         LOG_ERRORS = b.define("log_errors", true);
         STOP_ERROR_SPAM = b.define("stop_error_spam", true);
         STATION_SUCK_NEARBY_CHESTS = b.define("STATION_SUCK_NEARBY_CHESTS", false);
-        MIN_LEVEL_MAP_DROPS = b.defineInRange("min_level_map_drops", 10, 0, Integer.MAX_VALUE);
+        MIN_LEVEL_MAP_DROPS = b.defineInRange("min_level_map_drops", 25, 0, Integer.MAX_VALUE);
         MIN_SLIME_SIZE_FOR_LOOT = b.defineInRange("MIN_SLIME_SIZE_FOR_LOOT", 3, 0, Integer.MAX_VALUE);
         DEATH_PENALTY_START_LEVEL = b.defineInRange("DEATH_PENALTY_START_LEVEL", 25, 0, Integer.MAX_VALUE);
         LEVEL_DISTANCE_PENALTY_LEEWAY = b.defineInRange("LEVEL_DISTANCE_PENALTY_LEEWAY", 2, 0, Integer.MAX_VALUE);
@@ -78,8 +78,6 @@ public class ServerContainer {
 
         GEAR_DROPRATE = b.defineInRange("gear_drop_rate", 7D, 0, 1000);
         SOUl_DROPRATE = b.defineInRange("soul_drop_rate", 0.3D, 0, 1000);
-        MAP_DROPRATE = b.defineInRange("map_drop_rate", 1D, 0, 1000);
-        MAP_DROPRATE_INSIDE_MAPS = b.defineInRange("MAP_DROPRATE_INSIDE_MAPS", 0.5D, 0, 1000);
         GEM_DROPRATE = b.defineInRange("gem_drop_rate", 1D, 0, 1000);
         UBER_FRAG_DROPRATE = b.defineInRange("UBER_FRAG_DROP_RATE", 10D, 0, 1000);
         SKILL_GEM_DROPRATE = b.defineInRange("skill_gem_drop_rate", 3D, 0, 1000);
@@ -236,8 +234,6 @@ public class ServerContainer {
 
     public ForgeConfigSpec.DoubleValue GEAR_DROPRATE;
     public ForgeConfigSpec.DoubleValue SOUl_DROPRATE;
-    public ForgeConfigSpec.DoubleValue MAP_DROPRATE;
-    public ForgeConfigSpec.DoubleValue MAP_DROPRATE_INSIDE_MAPS;
     public ForgeConfigSpec.DoubleValue GEM_DROPRATE;
     public ForgeConfigSpec.DoubleValue UBER_FRAG_DROPRATE;
     public ForgeConfigSpec.DoubleValue SKILL_GEM_DROPRATE;
