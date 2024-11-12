@@ -1,6 +1,5 @@
 package com.robertx22.mine_and_slash.maps;
 
-import com.robertx22.library_of_exile.main.Packets;
 import com.robertx22.library_of_exile.utils.SoundUtils;
 import com.robertx22.library_of_exile.utils.geometry.Circle2d;
 import com.robertx22.mine_and_slash.database.data.profession.ProfessionBlockEntity;
@@ -9,7 +8,6 @@ import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
 import com.robertx22.mine_and_slash.uncommon.datasaving.StackSaving;
 import com.robertx22.mine_and_slash.uncommon.localization.Chats;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.WorldUtils;
-import com.robertx22.mine_and_slash.vanilla_mc.packets.OpenGuiPacket;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -129,6 +127,7 @@ public class MapBlock extends BaseEntityBlock {
                 if (map.isPresent()) {
                     MapData mapData = map.get();
 
+                    /*
                     if (Load.player(p).map.map != null) {
                         // if the map is done or player ran out of lives, give options to proceed
                         if (mapData.getLives(p) < 1 || Load.player(p).map.killed_boss) {
@@ -136,6 +135,7 @@ public class MapBlock extends BaseEntityBlock {
                             return InteractionResult.SUCCESS;
                         }
                     }
+                     */
 
                     if (!canJoinMap(p, mapData)) {
                         return InteractionResult.FAIL;

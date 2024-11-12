@@ -107,7 +107,6 @@ public class SlashItems {
     public static RegObj<Item> MAP_SETTER = Def.item(() -> new Item(new Item.Properties()), "set_map"); // todo add tooltips for this
     public static RegObj<Item> MAP_DEVICE = Def.item(() -> new BlockItem(SlashBlocks.MAP.get(), new Item.Properties()), "teleporter");
     public static RegObj<Item> TP_BACK = Def.item(() -> new TpBackItem(), "tp_back");
-    public static RegObj<Item> ARENA_TP = Def.item(() -> new BossTpItem(), "arena_teleport");
     public static RegObj<Item> INVISIBLE_ICON = Def.item(() -> new Item(new Item.Properties()), "invisible_item");
     public static RegObj<Item> TEST_GEN = Def.item(() -> new Item(new Item.Properties()), "test_gen");
     public static RegObj<Item> MASTER_BAG = Def.item(() -> new BackpackItem(), "master_bag");

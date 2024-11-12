@@ -56,16 +56,22 @@ public class MapScreen extends BaseScreen implements INamedScreen, IAlertScreen 
         try {
 
 
+            var p = mc.player;
+
             ItemStack stack = SlashItems.MAP.get().getDefaultInstance();
             getData().data.map.saveToStack(stack);
 
-
             var rar = getData().data.map.getRarity();
 
+            var canBoss = getData().data.canTeleportToArena(p).can;
 
             addRenderableWidget(new MapRarityButton(getData(), guiLeft + sizeX / 2 - MapRarityButton.SIZE / 2, guiTop + 5));
             addRenderableWidget(new ItemButton(stack, guiLeft + 56, guiTop + 58));
             addRenderableWidget(new MapBarButton(MapCompletePacket.SYNCED_DATA, guiLeft + 11, guiTop + 207));
+
+            if (canBoss) {
+                addRenderableWidget(new TeleportBossButton(guiLeft + (sizeX / 2) - TeleportBossButton.WIDTH / 2, guiTop + sizeY + 3));
+            }
 
 
         } catch (Exception e) {

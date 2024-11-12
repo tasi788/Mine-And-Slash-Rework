@@ -62,7 +62,7 @@ public class ServerContainer {
         LEVEL_DISTANCE_PENALTY_MIN_MULTI = b.defineInRange("min_loot_chance", 0.2D, 0, 1);
         EXTRA_MOB_STATS_PER_LEVEL = b.defineInRange("extra_mob_stats_per_lvl", 0.02D, 0, 1000);
         VANILLA_MOB_DMG_AS_EXILE_DMG = b.defineInRange("vanilla_mob_dmg_as_exile_dmg", 1D, 0, 1000);
-        PVP_DMG_MULTI = b.defineInRange("pvp_dmg_multi", 1D, 0, 1000);
+        PVP_DMG_MULTI = b.defineInRange("pvp_dmg_multi", 1D, 0, 10);
         MAX_TEAM_DISTANCE = b.defineInRange("max_team_distance", 75D, 0, 100000);
         MOB_DESPAWN_DISTANCE_IN_MAPS = b.comment("Distance needed from player to despawn mobs in maps, lower means more despawning")
                 .defineInRange("MOB_DESPAWN_DISTANCE_IN_MAPS", 30D, 5, 200);
