@@ -84,16 +84,16 @@ public class MapCreator extends AutoItem implements IShapedRecipe {
     public ShapedRecipeBuilder getRecipe() {
         return shaped(this)
                 .define('X', RarityStoneItem.of(IRarity.EPIC_ID))
-                .define('O', Items.IRON_INGOT)
+                .define('H', Items.IRON_INGOT)
                 .define('Y', Items.GOLD_INGOT)
                 .pattern("YYY")
-                .pattern("X0X")
+                .pattern("XHX")
                 .pattern("XXX")
                 .unlockedBy("player_level", trigger());
     }
 
     @Override
     public String GUID() {
-        return "";
+        return "map_creator";
     }
 }

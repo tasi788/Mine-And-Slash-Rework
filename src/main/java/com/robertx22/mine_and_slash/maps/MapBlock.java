@@ -2,6 +2,7 @@ package com.robertx22.mine_and_slash.maps;
 
 import com.robertx22.library_of_exile.utils.SoundUtils;
 import com.robertx22.library_of_exile.utils.geometry.Circle2d;
+import com.robertx22.mine_and_slash.config.forge.ServerContainer;
 import com.robertx22.mine_and_slash.database.data.profession.ProfessionBlockEntity;
 import com.robertx22.mine_and_slash.mmorpg.registers.common.items.SlashItems;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
@@ -88,6 +89,11 @@ public class MapBlock extends BaseEntityBlock {
 
 
         if (!level.isClientSide) {
+
+            if (Load.Unit(p).getLevel() < ServerContainer.get().MIN_LEVEL_MAP_DROPS.get()) {
+                p.sendSystemMessage(Chats.TOO_LOW_LEVEL.locName());
+                return InteractionResult.FAIL;
+            }
 
             MapItemData data = StackSaving.MAP.loadFrom(p.getItemInHand(pHand));
 

@@ -147,3 +147,14 @@ v.5.9.14
 v.5.9.15
 
 - should fix more prophecy bugs where items are given rarities they shouldn't possibly be able to have
+
+v.5.9.16
+
+    maps are now crafted instead of dropped. Basically instead of getting maps randomly as drops, you now craft a common map for cheap and can upgrade your map for free if you kill the boss in it.
+    you no longer heal in the void
+    map loot chest removed
+
+v.5.9.17
+
+- map device now cant be interacted by low lvl players
+- fix map creator recipe
