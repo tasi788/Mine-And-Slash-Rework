@@ -6,6 +6,7 @@ import com.robertx22.library_of_exile.main.Packets;
 import com.robertx22.mine_and_slash.database.data.auto_item.AutoItem;
 import com.robertx22.mine_and_slash.database.data.currency.reworked.ExileCurrency;
 import com.robertx22.mine_and_slash.database.data.gear_slots.GearSlot;
+import com.robertx22.mine_and_slash.database.data.spells.components.Spell;
 import com.robertx22.mine_and_slash.database.data.stats.datapacks.stats.AttributeStat;
 import com.robertx22.mine_and_slash.database.registry.ExileDB;
 import com.robertx22.mine_and_slash.mmorpg.ForgeEvents;
@@ -39,13 +40,24 @@ public class DatabaseCaches {
     }
 
     public static void resetCaches() {
-        Cached.reset();
         setupStatsThatAffectVanillaStatsList();
+        setupMaxSpellCharges();
         ErrorChecks.getAll().forEach(x -> x.check());
 
         ExileCurrency.CACHED_MAP.clear();
         AutoItem.CACHED_MAP.clear();
         GearSlot.CACHED = new HashMap<>();
+
+    }
+
+    private static void setupMaxSpellCharges() {
+        Cached.MAX_SPELL_CHARGES = new HashMap<>();
+
+        for (Spell spell : ExileDB.Spells().getList()) {
+            if (spell.config.charges > 0) {
+                Cached.MAX_SPELL_CHARGES.put(spell.config.charge_name, spell.config.charges);
+            }
+        }
     }
 
     private static void setupStatsThatAffectVanillaStatsList() {

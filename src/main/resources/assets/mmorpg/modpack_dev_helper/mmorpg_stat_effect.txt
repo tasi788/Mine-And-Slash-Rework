@@ -14,6 +14,7 @@ apply_cd_as_cast_time
 cancel_event
 decrease_cast_ticks_num
 decrease_cd_ticks_num
+decrease_charge_cd_ticks_num
 give_agony_to_source
 give_agony_to_target
 give_blind_to_target

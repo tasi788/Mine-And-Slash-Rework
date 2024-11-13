@@ -108,6 +108,7 @@ public class SpellChangeStats {
             .setSide(EffectSides.Source)
             .addCondition(x -> StatConditions.SPELL_HAS_TAG.get(x))
             .addEffect(StatEffects.DECREASE_COOLDOWN)
+            .addEffect(StatEffects.DECREASE_CHARGE_CD)
             .setLocName(x -> x.locNameForLangFile() + " Spell Cooldown Reduction")
             .setLocDesc(x -> "Reduces spell cooldown of spells with the tag.")
             .modifyAfterDone(x -> {
@@ -122,6 +123,7 @@ public class SpellChangeStats {
             .setPriority(StatPriority.Spell.FIRST)
             .setSide(EffectSides.Source)
             .addEffect(StatEffects.DECREASE_COOLDOWN)
+            .addEffect(StatEffects.DECREASE_CHARGE_CD)
             .setLocName(x -> "Cooldown Reduction")
             .setLocDesc(x -> "Reduces spell cooldown.")
             .modifyAfterDone(x -> {

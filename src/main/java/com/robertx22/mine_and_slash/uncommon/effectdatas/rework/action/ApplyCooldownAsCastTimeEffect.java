@@ -6,6 +6,7 @@ import com.robertx22.mine_and_slash.uncommon.effectdatas.EffectEvent;
 import com.robertx22.mine_and_slash.uncommon.effectdatas.rework.EventData;
 import com.robertx22.mine_and_slash.uncommon.interfaces.EffectSides;
 
+// todo i want to delete this
 public class ApplyCooldownAsCastTimeEffect extends StatEffect {
 
     public ApplyCooldownAsCastTimeEffect() {

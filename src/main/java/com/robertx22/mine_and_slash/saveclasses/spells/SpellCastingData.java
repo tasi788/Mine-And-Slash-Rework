@@ -449,7 +449,8 @@ public class SpellCastingData {
 
         if (ctx.spell.config.charges > 0) {
             if (ctx.caster instanceof Player) {
-                this.charges.spendCharge((Player) ctx.caster, ctx.spell.config.charge_name);
+                int chargecd = ctx.spell.getChargeCooldownTicks(ctx);
+                this.charges.spendCharge((Player) ctx.caster, ctx.spell, chargecd);
             }
         }
 

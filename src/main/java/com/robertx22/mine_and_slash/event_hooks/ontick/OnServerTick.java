@@ -174,7 +174,10 @@ public class OnServerTick {
 
             if (age % 5 == 0) {
                 var tickrate = 5;
+
                 unitdata.getResources().onTickBlock(player, tickrate);
+
+                playerData.spellCastingData.charges.onTicks(player, 5);
             }
 
             if (player.containerMenu instanceof CraftingStationMenu men) {
@@ -204,8 +207,6 @@ public class OnServerTick {
                     }
                 }
 
-
-                playerData.spellCastingData.charges.onTicks(player, 20);
 
                 if (player.getY() < (double) (player.level().getMinBuildHeight() - 64)) {
                     // if player is in the void bellow the world, stop regen

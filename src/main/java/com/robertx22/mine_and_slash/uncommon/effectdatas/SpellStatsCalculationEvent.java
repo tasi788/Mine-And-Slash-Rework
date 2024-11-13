@@ -58,6 +58,7 @@ public class SpellStatsCalculationEvent extends EffectEvent {
         this.data.setupNumber(EventData.MANA_COST, manamultilvl * spell.config.mana_cost.getValue(caster, spell));
         this.data.setupNumber(EventData.ENERGY_COST, manamultilvl * spell.config.ene_cost.getValue(caster, spell));
         this.data.setupNumber(EventData.COOLDOWN_TICKS, spell.config.cooldown_ticks);
+        this.data.setupNumber(EventData.CHARGE_COOLDOWN_TICKS, spell.config.charge_regen);
         this.data.setupNumber(EventData.PROJECTILE_SPEED_MULTI, 1F);
         this.data.setupNumber(EventData.DURATION_MULTI, 1F);
         this.data.setupNumber(EventData.AREA_MULTI, 1);
@@ -71,6 +72,11 @@ public class SpellStatsCalculationEvent extends EffectEvent {
 
         int cd = (int) Mth.clamp(data.getNumber(EventData.COOLDOWN_TICKS).number, getSpell().config.cooldown_ticks * GameBalanceConfig.get().MIN_SPELL_COOLDOWN_MULTI, 1000000);
         this.data.getNumber(EventData.COOLDOWN_TICKS).number = cd; // cap it to 80% cooldown
+
+
+        cd = (int) Mth.clamp(data.getNumber(EventData.CHARGE_COOLDOWN_TICKS).number, getSpell().config.charge_regen * GameBalanceConfig.get().MIN_SPELL_COOLDOWN_MULTI, 1000000);
+        this.data.getNumber(EventData.CHARGE_COOLDOWN_TICKS).number = cd; // cap it to 80% cooldown
+
         this.savedData.data = data;
     }
 
