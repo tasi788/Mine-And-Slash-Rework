@@ -1,5 +1,9 @@
 package com.robertx22.mine_and_slash.database.data.unique_items;
 
+import com.robertx22.library_of_exile.registry.ExileRegistryType;
+import com.robertx22.library_of_exile.registry.IAutoGson;
+import com.robertx22.library_of_exile.registry.JsonExileRegistry;
+import com.robertx22.library_of_exile.registry.serialization.ISerializable;
 import com.robertx22.mine_and_slash.database.data.StatMod;
 import com.robertx22.mine_and_slash.database.data.gear_slots.GearSlot;
 import com.robertx22.mine_and_slash.database.data.gear_types.bases.BaseGearType;
@@ -11,10 +15,6 @@ import com.robertx22.mine_and_slash.mmorpg.SlashRef;
 import com.robertx22.mine_and_slash.uncommon.interfaces.IAutoLocDesc;
 import com.robertx22.mine_and_slash.uncommon.interfaces.IAutoLocName;
 import com.robertx22.mine_and_slash.uncommon.interfaces.data_items.IRarity;
-import com.robertx22.library_of_exile.registry.ExileRegistryType;
-import com.robertx22.library_of_exile.registry.IAutoGson;
-import com.robertx22.library_of_exile.registry.JsonExileRegistry;
-import com.robertx22.library_of_exile.registry.serialization.ISerializable;
 import net.minecraft.ChatFormatting;
 
 import java.util.ArrayList;
@@ -27,6 +27,7 @@ public class UniqueGear implements JsonExileRegistry<UniqueGear>, IAutoLocName, 
     public List<StatMod> unique_stats = new ArrayList<>();
     public int weight = 1000;
     public int min_tier = 0;
+    public int min_drop_lvl = 1;
     public String guid;
     public String force_item_id = "";
     public String rarity = IRarity.UNIQUE_ID;

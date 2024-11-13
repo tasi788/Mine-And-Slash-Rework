@@ -51,8 +51,10 @@ public class MobBuilder {
         mob.finalizeSpawn((ServerLevelAccessor) world, world.getCurrentDifficultyAt(p), MobSpawnType.REINFORCEMENT, null, null);
         mob.setPos(vec.x(), vec.y(), vec.z());
 
+        if (rarity != null) {
+            Load.Unit(mob).setRarity(rarity.GUID());
+        }
         OnMobSpawn.setupNewMobOnSpawn(mob);
-
         if (rarity != null) {
             Load.Unit(mob).setRarity(rarity.GUID());
         }

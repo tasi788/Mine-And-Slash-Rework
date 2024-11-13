@@ -81,6 +81,7 @@ public class ChargeData {
 
                     chargesadded.add(id);
 
+                    // todo this is bad, it doesnt affect other stats?
                     float regen = charge_regen.getOrDefault(s.config.charge_name, 0);
                     regen += (float) ticks * (float) Load.Unit(player).getUnit().getCalculatedStat(SpellChangeStats.COOLDOWN_REDUCTION.get()).getMultiplier();
                     charge_regen.put(s.config.charge_name, (int) (regen));

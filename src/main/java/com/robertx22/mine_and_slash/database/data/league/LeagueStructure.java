@@ -9,6 +9,7 @@ import com.robertx22.mine_and_slash.mmorpg.ModErrors;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
 import com.robertx22.mine_and_slash.uncommon.localization.Chats;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -154,7 +155,7 @@ public abstract class LeagueStructure {
             if (lo != 0L) {
                 return ExplainedResult.success();
             } else {
-                return ExplainedResult.failure(Chats.NOT_INSIDE_MAP.locName());
+                return ExplainedResult.failure(Component.literal("League Structure didn't spawn yet or at all. Teleport failed. Try Exploring more of the map"));
 
             }
         } else {

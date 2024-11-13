@@ -1,7 +1,7 @@
 package com.robertx22.mine_and_slash.database.data.spells.entities;
 
-import com.robertx22.mine_and_slash.database.data.spells.components.ProjectileCastHelper;
 import com.robertx22.library_of_exile.utils.geometry.MyPosition;
+import com.robertx22.mine_and_slash.database.data.spells.components.ProjectileCastHelper;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -45,7 +45,7 @@ public class AutoAimingProj extends AbstractHurtingProjectile {
                         if (entity.isAlive()) {
                             this.doEnchantDamageEffects(livingentity, entity);
                         } else {
-                            livingentity.heal(5.0F);
+                            // livingentity.heal(5.0F);
                         }
                     }
                 } else {

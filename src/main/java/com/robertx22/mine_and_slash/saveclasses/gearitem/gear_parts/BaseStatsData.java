@@ -77,7 +77,7 @@ public class BaseStatsData implements IRerollable, IStatsContainer, IGearPartToo
 
         var gear = ex.get(StackKeys.GEAR).get();
 
-        int p = (int) (this.p * gear.getQualityBaseStatsMulti(ex));
+        int p = (int) (this.p + gear.getQualityBaseStatsBonus(ex));
 
         int lvl = gear.lvl;
 
@@ -98,7 +98,7 @@ public class BaseStatsData implements IRerollable, IStatsContainer, IGearPartToo
 
         List<ExactStatData> baseStats = new ArrayList<>();
 
-        int p = (int) (this.p * gear.getQualityBaseStatsMulti(stack));
+        int p = (int) (this.p + gear.getQualityBaseStatsBonus(stack));
 
         int lvl = gear.lvl;
 

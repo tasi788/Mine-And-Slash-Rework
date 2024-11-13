@@ -20,6 +20,7 @@ public enum Chats implements IAutoLocName {
     TOTAL_CHESTS("Chests in Map: %1$s/%2$s"),
     NOT_INSIDE_MAP("You are not inside a valid Adventure Map"),
 
+
     NOT_GEAR_OR_NOT_COMPAT("Not a Gear Item or not recognized as such."),
     NOT_MATCHING_GEAR_FAMILY("That Gear isn't of the correct Gear Family (Armors, Weapons, Jewelry, Offhands)"),
     NOT_MATCHING_GEAR_SLOT("Not the correct gear slot type."),

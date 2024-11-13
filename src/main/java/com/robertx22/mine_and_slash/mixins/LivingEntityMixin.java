@@ -25,6 +25,9 @@ public abstract class LivingEntityMixin implements LivingEntityAccesor {
     @Shadow
     protected abstract float getVoicePitch();
 
+    @Shadow
+    protected abstract void updateInvisibilityStatus();
+
     @Override
     @Invoker("blockedByShield")
     public abstract void myknockback(LivingEntity target);
@@ -44,9 +47,11 @@ public abstract class LivingEntityMixin implements LivingEntityAccesor {
     @ModifyVariable(method = "heal(F)V", at = @At(value = "HEAD"), argsOnly = true, ordinal = 0)
     public float reduceHealPerLevel(float amount, float arg) {
         LivingEntity en = (LivingEntity) (Object) this;
+
         if (en instanceof Player) {
             return HealthUtils.realToVanilla(en, amount);
         }
+
         return amount;
     }
 

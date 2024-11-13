@@ -68,8 +68,8 @@ public class GearItemData implements ICommonDataItem<GearRarity> {
     public String gtype = "";
 
 
-    public float getQualityBaseStatsMulti(ExileStack stack) {
-        return 1F + (stack.get(StackKeys.CUSTOM).getOrCreate().data.get(CustomItemData.KEYS.QUALITY) / 100F);
+    public int getQualityBaseStatsBonus(ExileStack stack) {
+        return stack.get(StackKeys.CUSTOM).getOrCreate().data.get(CustomItemData.KEYS.QUALITY);
     }
 
 

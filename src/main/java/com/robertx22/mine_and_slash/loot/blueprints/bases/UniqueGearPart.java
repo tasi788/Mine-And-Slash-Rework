@@ -26,7 +26,7 @@ public class UniqueGearPart extends BlueprintPart<UniqueGear, GearBlueprint> {
                 blueprint.gearItemSlot.override(uniq.getBaseGear());
                 return uniq;
             } else {
-                UniqueGear uniq = ExileDB.UniqueGears().getFilterWrapped(x -> blueprint.info.map_tier >= x.min_tier).random();
+                UniqueGear uniq = ExileDB.UniqueGears().getFilterWrapped(x -> blueprint.info.map_tier >= x.min_tier).of(x -> blueprint.info.level >= x.min_drop_lvl).random();
                 if (uniq != null) {
                     blueprint.gearItemSlot.override(uniq.getBaseGear());
                 }
