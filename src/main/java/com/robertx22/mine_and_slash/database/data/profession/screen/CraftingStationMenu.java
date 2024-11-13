@@ -113,12 +113,14 @@ public class CraftingStationMenu extends AbstractContainerMenu {
 
         @Override
         public boolean mayPlace(ItemStack pStack) {
+
             if (be == null) {
                 return true; // todo why would this be null
             }
             if (pStack.getItem() == SlashItems.DESTROY_OUTPUT.get()) {
                 return true;
             }
+            be.setChanged(); // seems prof stations werent always saving the items..
 
             if (be.recipe_locked) {
                 if (be.last_recipe == null)

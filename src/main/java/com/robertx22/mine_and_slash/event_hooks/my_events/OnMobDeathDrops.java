@@ -50,9 +50,11 @@ public class OnMobDeathDrops extends EventConsumer<ExileEvents.OnMobDeath> {
                         // todo does this grab everyone in the map?
                         for (Player p : mobKilled.level().getEntitiesOfClass(Player.class, mobKilled.getBoundingBox().inflate(200))) {
                             Load.player(p).map.killed_boss = true;
+                            Load.player(p).playerDataSync.setDirty();
                         }
                         if (onMobDeath.killer instanceof Player p) {
                             Load.player(p).map.killed_boss = true;
+                            Load.player(p).playerDataSync.setDirty();
                         }
                     }
                 }

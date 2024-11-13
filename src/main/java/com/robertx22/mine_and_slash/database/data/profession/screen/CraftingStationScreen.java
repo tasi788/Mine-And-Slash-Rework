@@ -123,7 +123,7 @@ public abstract class CraftingStationScreen extends AbstractContainerScreen<Craf
             tip.add(Component.literal(UNICODE.CUBE + " ").append(Itemtips.RECIPE_MATERIAL.locName()).append(" " + UNICODE.CUBE).withStyle(ChatFormatting.RED, ChatFormatting.BOLD));
             tip.add(Component.empty());
             button.extraText = tip;
-            
+
             this.addRenderableWidget(button);
             xoff += spacing;
         }
@@ -152,7 +152,7 @@ public abstract class CraftingStationScreen extends AbstractContainerScreen<Craf
             int spacing = RecipeButton.XS + 2;
 
             for (ProfessionRecipe recipe : all) {
-                this.addRenderableWidget(new RecipeButton(this, recipe, leftPos + imageWidth + xoff, topPos + yoff));
+                this.addRenderableWidget(new RecipeButton(this, recipe, leftPos + xoff, topPos - 20 - yoff));
 
                 xoff += spacing;
                 if (xoff > (spacing * 2)) {

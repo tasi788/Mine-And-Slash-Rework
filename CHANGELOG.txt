@@ -7,3 +7,6 @@ v.5.9.18
 - should fix mobs spawning with incorrect affix number in maps, mostly fixes bosses having affixes
 - cdr stats now also have an additional effect: reduces charge cd (update the stat/effect datapacks)
 This should mean cdr now works properly on charges
+- station recipes now show up not right
+- attempt fix stations not sometimes saving items
+- try fix map spawning out of world borders

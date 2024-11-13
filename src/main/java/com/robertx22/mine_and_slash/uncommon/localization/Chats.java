@@ -12,6 +12,7 @@ public enum Chats implements IAutoLocName {
     BOSS_LOCKED("Boss Arena: Locked until Map is %1$s Explored"),
     MAP_EXPLORATION_RARITY("%1$s Map Exploration %2$s"),
     CURRENT_MAP_EXPLORATION_PERCENT("%1$s of current Map Explored"),
+    SCOUT_MAP_FIRST("This Map is not Scouted yet!\n\nWhen the entire map is generated/scouted, you will be able to check your progress.\n\nMake sure you vsisited the entire Map!"),
 
     EXPLORED_X_MAP_ROOMS("%1$s out of %2$s Map Rooms Scouted."),
     MAP_FINISHED_SPAWNING("Map Scouting Complete!"),

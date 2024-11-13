@@ -82,7 +82,7 @@ public class OnServerTick {
                         pro.clearIfNewMap(map.map);
                     }
 
-                    if (player.tickCount % (20 * 15) == 0) {
+                    if (player.tickCount % (20 * 10) == 0) {
                         Packets.sendToClient(player, new MapCompletePacket(new MapSyncData(map)));
                     }
 

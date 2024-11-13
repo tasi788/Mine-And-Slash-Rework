@@ -44,6 +44,7 @@ public class UberBossAltarBlock extends Block {
                     //OnMobSpawn.setupNewMob(en, Load.Unit(en), null);
                     //Load.Unit(en).setRarity(IRarity.UBER);
 
+                    Load.Unit(en).setRarity(IRarity.UBER); // todo does this work
 
                     level.addFreshEntity(en);
 

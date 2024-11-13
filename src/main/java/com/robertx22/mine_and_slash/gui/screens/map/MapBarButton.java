@@ -9,6 +9,7 @@ import com.robertx22.mine_and_slash.mmorpg.UNICODE;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
 import com.robertx22.mine_and_slash.uncommon.localization.Chats;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.ClientOnly;
+import com.robertx22.mine_and_slash.uncommon.utilityclasses.TooltipUtils;
 import com.robertx22.mine_and_slash.vanilla_mc.packets.MapCompletePacket;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
@@ -79,10 +80,13 @@ public class MapBarButton extends ImageButton {
         }
         int perc = map.rooms.getMapCompletePercent();
 
-        all.add(Chats.CURRENT_MAP_EXPLORATION_PERCENT.locName(perc + "%").withStyle(ChatFormatting.YELLOW));
-
+        if (map.rooms.isDoneGenerating()) {
+            all.add(Chats.CURRENT_MAP_EXPLORATION_PERCENT.locName(perc + "%").withStyle(ChatFormatting.YELLOW));
+        } else {
+            all.addAll(TooltipUtils.splitLongText(Chats.SCOUT_MAP_FIRST.locName().withStyle(ChatFormatting.RED)));
+            return all;
+        }
         all.add(Component.empty());
-
 
         var rarities = ExileDB.GearRarities().getFilterWrapped(x -> x.type == GearRarityType.NORMAL).list.stream()
                 .sorted(Comparator.comparingInt(x -> x.item_tier)).collect(Collectors.toList());

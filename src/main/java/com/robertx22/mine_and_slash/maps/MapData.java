@@ -149,20 +149,17 @@ public class MapData {
         // seems this is how you get the level
         WorldBorder border = level.getServer().getLevel(ResourceKey.create(Registries.DIMENSION, WorldUtils.DUNGEON_DIM_ID)).getWorldBorder();
 
-        int max = (int) (border.getSize() / 16 / 2);
+        int max = (int) (border.getMaxX() / 16 / 2);
 
         max = MathHelper.clamp(max, 0, 299999 / 2); // don't be higher than normal mc border
 
-        while (pos == null || maps.getMap(pos).isPresent()) {
+        while (pos == null || maps.getMap(pos).isPresent() || !border.isWithinBounds(pos)) {
             if (tries > 200) {
                 ExileLog.get().warn("Tried too many times to find random dungeon pos and failed, please delete the map dimension folder");
                 return null;
             }
             int x = RandomUtils.RandomRange(50, max);
             int z = RandomUtils.RandomRange(50, max);
-
-            // x = max;
-            // z = max; // todo even at max it doesnt trigger world border, so it shouldnt be this
 
             pos = new ChunkPos(x, z);
             pos = getStartChunk(pos.getMiddleBlockPosition(50));

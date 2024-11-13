@@ -175,7 +175,10 @@ public class Unit {
     }
 
     public String randomRarity(int lvl, EntityData data) {
-
+        // if it's already set
+        if (!data.getRarity().equals(IRarity.COMMON_ID) && ExileDB.MobRarities().isRegistered(data.getRarity())) {
+            return data.getRarity();
+        }
         List<MobRarity> rarities = ExileDB.MobRarities()
                 .getList()
                 .stream()
