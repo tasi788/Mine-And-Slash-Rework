@@ -7,6 +7,7 @@ import com.robertx22.mine_and_slash.database.registry.ExileDB;
 import com.robertx22.mine_and_slash.maps.DungeonRoom;
 import com.robertx22.mine_and_slash.maps.MapData;
 import com.robertx22.mine_and_slash.maps.dungeon_reg.Dungeon;
+import com.robertx22.mine_and_slash.mmorpg.MMORPG;
 import net.minecraft.world.level.ChunkPos;
 
 import java.util.ArrayList;
@@ -29,11 +30,15 @@ public class DungeonBuilder {
 
         this.dungeon = RandomUtils.weightedRandom(ExileDB.Dungeons().getFilterWrapped(x -> x.can_be_main).list, rand.nextDouble());
 
-   
+
         //       this.dungeon = ExileDB.Dungeons().get("pyramid"); // todo
+
 
         this.size = RandomUtils.RandomRange(ServerContainer.get().MIN_MAP_ROOMS.get(), ServerContainer.get().MAX_MAP_ROOMS.get(), rand);
 
+        if (MMORPG.RUN_DEV_TOOLS_REMOVE_WHEN_DONE) {
+            this.size = 3;
+        }
         // todo this needs the same random if i'll use at world gen async, if i do it myself, it doesnt
 
         if (RandomUtils.roll(5, rand)) {

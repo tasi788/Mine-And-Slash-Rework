@@ -9,7 +9,6 @@ import com.robertx22.mine_and_slash.mmorpg.UNICODE;
 import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
 import com.robertx22.mine_and_slash.uncommon.localization.Chats;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.ClientOnly;
-import com.robertx22.mine_and_slash.uncommon.utilityclasses.TooltipUtils;
 import com.robertx22.mine_and_slash.vanilla_mc.packets.MapCompletePacket;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
@@ -80,11 +79,11 @@ public class MapBarButton extends ImageButton {
         }
         int perc = map.rooms.getMapCompletePercent();
 
-        if (map.rooms.isDoneGenerating()) {
+        if (true || map.rooms.isDoneGenerating()) {
             all.add(Chats.CURRENT_MAP_EXPLORATION_PERCENT.locName(perc + "%").withStyle(ChatFormatting.YELLOW));
         } else {
-            all.addAll(TooltipUtils.splitLongText(Chats.SCOUT_MAP_FIRST.locName().withStyle(ChatFormatting.RED)));
-            return all;
+            //all.addAll(TooltipUtils.splitLongText(Chats.SCOUT_MAP_FIRST.locName().withStyle(ChatFormatting.RED)));
+            //return all;
         }
         all.add(Component.empty());
 
@@ -106,8 +105,8 @@ public class MapBarButton extends ImageButton {
         if (map.rooms.isDoneGenerating()) {
             all.add(Chats.MAP_FINISHED_SPAWNING.locName().withStyle(ChatFormatting.DARK_PURPLE));
             var color = ChatFormatting.LIGHT_PURPLE;
-            all.add(Chats.TOTAL_MOBS.locName(map.rooms.mobs.done, map.rooms.mobs.total).withStyle(color));
-            all.add(Chats.TOTAL_CHESTS.locName(map.rooms.chests.done, map.rooms.chests.total).withStyle(color));
+            //all.add(Chats.TOTAL_MOBS.locName(map.rooms.mobs.done, map.rooms.mobs.total).withStyle(color));
+            //all.add(Chats.TOTAL_CHESTS.locName(map.rooms.chests.done, map.rooms.chests.total).withStyle(color));
         } else {
             all.add(Chats.MAP_NOT_SCOUTED.locName().withStyle(ChatFormatting.RED));
         }

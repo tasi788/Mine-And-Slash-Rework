@@ -42,7 +42,7 @@ public class OnLootChestEvent extends EventConsumer<ExileEvents.OnChestLooted> {
         }
 
         if (WorldUtils.isMapWorldClass(player.level())) {
-            Load.mapAt(player.level(), event.pos).rooms.chests.done++;
+            Load.mapAt(player.level(), event.pos).rooms.get(player.chunkPosition()).chests.done++;
         }
 
         /*

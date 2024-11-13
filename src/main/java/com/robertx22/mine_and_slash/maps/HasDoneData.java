@@ -7,9 +7,11 @@ public class HasDoneData {
 
     // remember not to call if all rooms aren't done genning
     public int getPercentDone() {
+        /*
         if (total <= 0) {
             return 0;
         }
+                 */
         if (done >= total) {
             return 100; // in case there's fucky floating point shit happening
         }

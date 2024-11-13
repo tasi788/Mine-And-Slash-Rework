@@ -122,7 +122,6 @@ public class ProcessChunkBlocks {
                         var chunkdata = Load.chunkData(chunk);
 
                         if (!chunkdata.generatedTerrain) {
-
                             chunkdata.generatedTerrain = true;
 
                             DungeonFeature.place(opt.get(), level, level.getRandom(), cpos.getBlockAt(0, 0, 0));
@@ -166,6 +165,7 @@ public class ProcessChunkBlocks {
                             map.leagues.processedChunks++;
 
                             if (!room.room.isBarrier) {
+                                map.rooms.addRoom(cpos);
                                 map.rooms.rooms.done++;
 
                                 var color = ChatFormatting.LIGHT_PURPLE;
@@ -181,8 +181,8 @@ public class ProcessChunkBlocks {
 
                                     if (map.rooms.isDoneGenerating()) {
                                         player.sendSystemMessage(Chats.MAP_FINISHED_SPAWNING.locName().withStyle(ChatFormatting.DARK_PURPLE));
-                                        player.sendSystemMessage(Chats.TOTAL_MOBS.locName(map.rooms.mobs.done, map.rooms.mobs.total).withStyle(color));
-                                        player.sendSystemMessage(Chats.TOTAL_CHESTS.locName(map.rooms.chests.done, map.rooms.chests.total).withStyle(color));
+                                        // player.sendSystemMessage(Chats.TOTAL_MOBS.locName(map.rooms.mobs.done, map.rooms.mobs.total).withStyle(color));
+                                        // player.sendSystemMessage(Chats.TOTAL_CHESTS.locName(map.rooms.chests.done, map.rooms.chests.total).withStyle(color));
                                     }
                                 }
 

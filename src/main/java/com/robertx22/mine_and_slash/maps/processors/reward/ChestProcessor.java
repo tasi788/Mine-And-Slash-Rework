@@ -7,6 +7,7 @@ import com.robertx22.mine_and_slash.uncommon.datasaving.Load;
 import com.robertx22.mine_and_slash.uncommon.utilityclasses.LevelUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -68,7 +69,7 @@ public class ChestProcessor extends DataProcessor {
 
             chest.setLootTable(world, world.getRandom(), pos, table);
 
-            Load.mapAt(world, pos).rooms.chests.total++;
+            Load.mapAt(world, pos).rooms.get(new ChunkPos(pos)).chests.total++;
 
         } else {
             ExileLog.get().warn("Chest gen failed, tile not instanceof vanilla chest.");

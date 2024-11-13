@@ -99,7 +99,7 @@ public class OnMobDeathDrops extends EventConsumer<ExileEvents.OnMobDeath> {
                     if (WorldUtils.isDungeonWorld(mobKilled.level())) {
                         var map = Load.mapAt(mobKilled.level(), mobKilled.blockPosition());
                         if (map != null) {
-                            map.rooms.mobs.done++;
+                            map.rooms.get(player.chunkPosition()).mobs.done++;
                         }
                     }
 
