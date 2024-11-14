@@ -3300,6 +3300,12 @@
     "mmorpg.stat_desc.weapon_skill_cdr": "縮短具有此標籤的法術冷卻時間。",
     "mmorpg.stat_desc.weapon_skill_spell_dmg": "增加具有此標籤的法術傷害。圖騰傷害增加圖騰傷害等。",
     "mmorpg.stat_desc.wounds_immunity": "免疫特定效果，而非原版Minecraft效果！",
+
+"_comment": " [CATEGORY]: STATS - DESCRIPTIONS",
+
+
+"_comment": " [CATEGORY]: SPELLS - DESCRIPTIONS",
+
     "spell.desc.arrow_barrage": "快速連射箭矢，造成[calc:arrow_storm] \u00A796\u2600 物理\u00A77 傷害",
     "spell.desc.arrow_storm": "弧形射出箭矢，造成[calc:arrow_storm] \u00A796\u2600 物理\u00A77 傷害",
     "spell.desc.arrow_totem": "召喚一個快速射箭的圖騰，造成[calc:arrow_totem] \u00A796\u2600 物理\u00A77 傷害",
