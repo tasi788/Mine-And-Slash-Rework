@@ -550,7 +550,7 @@
 	"mmorpg.support_gem.threat": "Gema de Suporte de Maior Ameaça",
 	"mmorpg.support_gem.totem_damage": "Gema de Suporte de Dano do Totem",
 	"mmorpg.support_gem.totem_dmg_cdr": "Gema de Suporte de Totens Primordiais",
-	"mmorpg.support_gem.water_pene": "Gema de Suporte de Penetração Gélida"
+	"mmorpg.support_gem.water_pene": "Gema de Suporte de Penetração Gélida",
 
 "_comment": " [CATEGORY]: SPELLS - NAMES",
 
@@ -632,7 +632,7 @@
 	"mmorpg.affix.of_spell_dmg": "De Dano Mágico",
 	"mmorpg.affix.of_spirit_markings": "Das Marcas Espirituais",
 	"mmorpg.affix.of_the_philosopher": "Do Filósofo",
-	"mmorpg.affix.of_the_sky": "Do Céu"
+	"mmorpg.affix.of_the_sky": "Do Céu",
 	"mmorpg.affix.of_the_titan": "Do Titã",
 	"mmorpg.affix.of_the_troll": "Do Troll",
 	"mmorpg.affix.of_the_wind": "Do Vento",
@@ -664,7 +664,7 @@
 	"mmorpg.affix.wep_item_flat": "Mortal",
 	"mmorpg.affix.wep_item_perc": "Cruel",
 	"mmorpg.affix.wildfire_staff": "Cajado do Fogo Selvagem",
-	"mmorpg.affix.wolf_pelt": "Pele de Lobo"
+	"mmorpg.affix.wolf_pelt": "Pele de Lobo",
 
 "_comment": " [CATEGORIA]: AFIXOS - NOMES",
 
@@ -768,9 +768,9 @@
 	"mmorpg.tag.spell.thorns": "Espinhos",
 	"mmorpg.tag.spell.totem": "Totem",
 	"mmorpg.tag.spell.trap": "Armadilha",
-	"mmorpg.tag.spell.weapon_skill": "Habilidade de Arma"
+	"mmorpg.tag.spell.weapon_skill": "Habilidade de Arma",
 
-""_comment": " [CATEGORIA]: TAGS - NOMES",
+"_comment": " [CATEGORIA]: TAGS - NOMES",
 
 "_comment": " [CATEGORIA]: CAIXAS DE SAQUE - NOMES",
 
@@ -857,7 +857,7 @@
 	"mmorpg.rarity..rare": "Raro",
 	"mmorpg.rarity..runeword": "Runado",
 	"mmorpg.rarity..uncommon": "Incomum",
-	"mmorpg.rarity..unique": "Único"
+	"mmorpg.rarity..unique": "Único",
 
 "_comment": " [CATEGORY]: RARITIES - NAMES",
 
@@ -940,7 +940,7 @@
 	"mmorpg.effect.vamp_blood": "Sangue Vampírico",
 	"mmorpg.effect.vigor": "Vigor",
 	"mmorpg.effect.weak": "Maldição da Fraqueza",
-	"mmorpg.effect.wounds": "Feridas"
+	"mmorpg.effect.wounds": "Feridas",
 	
 "_comment": " [CATEGORIA]: EFEITOS DE STATUS - NOMES",
 
@@ -1151,7 +1151,7 @@
 	"mmorpg.talent.water_penetration_big": "Penetração de Frio Elevada",
 	"mmorpg.talent.water_resist_big": "Resistência de Frio Elevada",
 	"mmorpg.talent.wind_dancer": "Dançarino do Vento",
-	"mmorpg.talent.witchs_brew": "Poção da Bruxa"
+	"mmorpg.talent.witchs_brew": "Poção da Bruxa",
 
 "_comment": " [CATEGORIA]: TALENTOS - NOMES",
 
@@ -1271,7 +1271,7 @@
 	"mmorpg.word.usableon": "Utilizável em: ",
 	"mmorpg.word.very_hard": "Muito Difícil",
 	"mmorpg.word.weapon": "Em Arma: ",
-	"mmorpg.word.wiki": "Wiki"
+	"mmorpg.word.wiki": "Wiki",
 	
 "_comment": " [CATEGORIA]: PALAVRAS - NOMES",
 
@@ -1871,7 +1871,7 @@
 	"mmorpg.stat.weapon_damage": "Dano da Arma",
 	"mmorpg.stat.weapon_skill_cdr": "Redução de Tempo de Recarga da Habilidade da Arma",
 	"mmorpg.stat.weapon_skill_spell_dmg": "Dano da Habilidade da Arma",
-	"mmorpg.stat.weapon_skill_spell_dmg_taken": "Dano da Habilidade da Arma Sofrido"
+	"mmorpg.stat.weapon_skill_spell_dmg_taken": "Dano da Habilidade da Arma Sofrido",
 
 "_comment": " [CATEGORIA]: NOMES DAS ESTATÍSTICAS",
 
@@ -1895,7 +1895,7 @@
   "mmorpg.formatter.special_calc_stat": "%1$s %2$s",
   "mmorpg.formatter.special_calc_stat.locale_context_for_translator": "só funcionará quando a estatística tiver um prefixo (\"aumentado\", \"Reduzido\", \"Mais\", \"Menos\")",
   "mmorpg.formatter.special_unique_process": "%1$s %2$s",
-  "mmorpg.formatter.special_unique_process.locale_context_for_translator": "atualmente sem uso"
+  "mmorpg.formatter.special_unique_process.locale_context_for_translator": "atualmente sem uso",
 
 "_comment": " [CATEGORIA]: NOMES DOS FORMATADORES",
 
@@ -1994,7 +1994,7 @@
   "item.mmorpg.jewelry.ring.iron": "Anel",
   "item.mmorpg.weapon.staff.diamond": "Cajado",
   "item.mmorpg.weapon.staff.iron": "Cajado",
-  "item.mmorpg.weapon.staff.wood": "Cajado"
+  "item.mmorpg.weapon.staff.wood": "Cajado",
   
 "_comment": " [CATEGORIA]: ITENS DE EQUIPAMENTO - NOMES",
 
@@ -2084,7 +2084,7 @@
 	"mmorpg.chat.vines_shrink": "As vinhas parecem encolher, por enquanto...",
 	"mmorpg.chat.weapon_req_not_met": "Requisitos de arma não atendidos",
 	"mmorpg.chat.wrong_casting_weapon": "Esse tipo de arma não pode lançar esse feitiço",
-	"mmorpg.chat.you_lack_jewel_slots": "Você não possui slots de joias! Você geralmente os obtém da árvore de talentos. Você pode usar a barra de pesquisa na tela de Talentos para encontrá-los."
+	"mmorpg.chat.you_lack_jewel_slots": "Você não possui slots de joias! Você geralmente os obtém da árvore de talentos. Você pode usar a barra de pesquisa na tela de Talentos para encontrá-los.",
 
 	"_comment": " [CATEGORIA]: MENSAGENS DE BATE-PAPO - NOMES",
 
@@ -2181,7 +2181,7 @@
 	"mmorpg.stat_desc.chaining_cdr": "Reduz o tempo de recarga de feitiços com a tag.",
 	"mmorpg.stat_desc.chaining_spell_dmg": "Aumenta o dano de feitiços com esta tag. Dano de Totem aumenta o dano dos totens, etc.",
 	"mmorpg.stat_desc.chance_of_blind": "Chance de aplicar o efeito.",
-	"mmorpg.stat_desc.chance_of_slow": "Chance de aplicar o efeito."
+	"mmorpg.stat_desc.chance_of_slow": "Chance de aplicar o efeito.",
     "mmorpg.stat_desc.chaos_cdr": "Reduz o tempo de recarga de feitiços com a tag.",
     "mmorpg.stat_desc.chaos_crit_taken": "Se crítico desse elemento, multiplica por x.",
     "mmorpg.stat_desc.chaos_dot_damage": "O dano ao longo do tempo aumenta o dano de queimaduras, por exemplo.",
@@ -2278,7 +2278,7 @@
     "mmorpg.stat_desc.golem_cdr": "Reduz o tempo de recarga de feitiços com a tag",
     "mmorpg.stat_desc.golem_spell_chance": "Chance de bônus para golems lançarem seus feitiços de área",
     "mmorpg.stat_desc.golem_spell_dmg": "Aumenta o dano de feitiços com essa tag. Dano de Totem aumenta o dano de totens, etc.",
-    "mmorpg.stat_desc.has_pet_ability_cdr": "Reduz o tempo de recarga de feitiços com a tag"
+    "mmorpg.stat_desc.has_pet_ability_cdr": "Reduz o tempo de recarga de feitiços com a tag",
     "mmorpg.stat_desc.has_pet_ability_spell_dmg": "Aumenta o dano de feitiços com essa marca. Dano de Totem aumenta o dano de totens, etc.",
     "mmorpg.stat_desc.heal_cdr": "Reduz o tempo de recarga de feitiços com essa marca.",
     "mmorpg.stat_desc.heal_effect_on_self": "Aumenta curas relacionadas a feitiços em você.",
@@ -2431,7 +2431,7 @@
     "mmorpg.stat_desc.water_spell_dmg": "Aumenta o dano de feitiços com essa marca. Dano de Totem aumenta o dano de totens, etc.",
     "mmorpg.stat_desc.weapon_damage": "Aumenta o dano causado se foi causado por essa arma",
     "mmorpg.stat_desc.weapon_skill_cdr": "Reduz o tempo de recarga de feitiços com essa marca.",
-    "mmorpg.stat_desc.weapon_skill_spell_dmg": "Aumenta o dano de feitiços com essa marca. Dano de Totem aumenta o dano de totens, etc."
+    "mmorpg.stat_desc.weapon_skill_spell_dmg": "Aumenta o dano de feitiços com essa marca. Dano de Totem aumenta o dano de totens, etc.",
 
   "_comment": " [CATEGORIA]: ESTATÍSTICAS - DESCRIÇÕES",
   
