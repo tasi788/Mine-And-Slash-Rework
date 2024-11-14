@@ -83,7 +83,7 @@ public class AilmentChance extends Stat {
 
     @Override
     public String locDescForLangFile() {
-        return "Chance to Cause the Ailment on hit. Maximum chance is 100%. " + ailment.locDescForLangFile();
+        return "Chance to Cause the Ailment on " + getElement().dmgName + "  hits. Maximum chance is 100%. " + ailment.locDescForLangFile();
     }
 
     @Override

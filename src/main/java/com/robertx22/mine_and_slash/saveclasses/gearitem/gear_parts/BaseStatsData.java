@@ -1,5 +1,6 @@
 package com.robertx22.mine_and_slash.saveclasses.gearitem.gear_parts;
 
+import com.robertx22.mine_and_slash.database.data.MinMax;
 import com.robertx22.mine_and_slash.database.data.stats.tooltips.StatTooltipType;
 import com.robertx22.mine_and_slash.database.data.stats.types.gear_base.IBaseStatModifier;
 import com.robertx22.mine_and_slash.itemstack.ExileStack;
@@ -23,9 +24,7 @@ public class BaseStatsData implements IRerollable, IStatsContainer, IGearPartToo
 
     @Override
     public void RerollFully(GearItemData gear) {
-
-        p = gear.getRarity().stat_percents.random();
-
+        p = getMinMax(gear).random();
     }
 
     @Override
@@ -70,6 +69,10 @@ public class BaseStatsData implements IRerollable, IStatsContainer, IGearPartToo
         return true;
     }
 
+    @Override
+    public MinMax getMinMax(GearItemData gear) {
+        return gear.getRarity().base_stat_percents;
+    }
 
     // this can run on client
     public List<TooltipStatWithContext> getAllStatsWithCtx(ExileStack ex) {
