@@ -539,7 +539,7 @@
 	"mmorpg.stat_group.ele_spell_damage": "元素法術傷害",
 	"mmorpg.stat_group.max_resist": "最大抗性",
 	"mmorpg.stat_group.none": "無",
-	"mmorpg.stat_group.resist": "元素抗性"
+	"mmorpg.stat_group.resist": "元素抗性",
 
 "_comment": " [CATEGORY]: STATGROUP - NAMES",
 
@@ -583,7 +583,7 @@
 
 	"mmorpg.buff_consumption.elixir": "藥劑",
 	"mmorpg.buff_consumption.meal": "餐點",
-	"mmorpg.buff_consumption.seafood": "海鮮"
+	"mmorpg.buff_consumption.seafood": "海鮮",
 
 "_comment": " [CATEGORY]: FOODS - NAMES",
 
@@ -678,7 +678,7 @@
 	"item.mmorpg.currency.socket_adder": "挖掘寶珠",
 	"item.mmorpg.currency.unique_reroll": "不完美寶珠",
 	"item.mmorpg.currency.up_corrupt_affix": "愚蠢冒險寶珠",
-	"item.mmorpg.currency.upgrade_common_affix": "初學者寬恕寶珠"
+	"item.mmorpg.currency.upgrade_common_affix": "初學者寬恕寶珠",
 
 "_comment": " [CATEGORY]: CURRENCY ITEMS - NAMES",
 
@@ -721,7 +721,7 @@
 	"mmorpg.effect.vamp_blood": "吸血",
 	"mmorpg.effect.vigor": "元氣",
 	"mmorpg.effect.weak": "元素虛弱",
-	"mmorpg.effect.wounds": "創傷"
+	"mmorpg.effect.wounds": "創傷",
 
 "_comment": " [CATEGORY]: STATUSEFFECTS - NAMES",
 
@@ -1095,7 +1095,7 @@
 	"mmorpg.stat.armor_penetration": "護甲穿透",
 	"mmorpg.stat.armor_per_10_dodge": "\u00A7a[VAL1] \u00A79\u2605 護甲\u00A77 每 10 點 \u00A72\u2605 閃避等級\u00A77",
 	"mmorpg.stat.armor_per_10_mana": "\u00A7a[VAL1] \u00A79\u2605 護甲\u00A77 每 10 點 \u00A79\u262F 法力\u00A77",
-	"mmorpg.stat.arrow_cast_time": "箭矢施法時間"
+	"mmorpg.stat.arrow_cast_time": "箭矢施法時間",
 	"mmorpg.stat.arrow_cdr": "箭矢法術冷卻縮減",
 	"mmorpg.stat.arrow_spell_dmg": "箭矢法術標籤傷害",
 	"mmorpg.stat.arrow_spell_dmg_taken": "受到的箭矢傷害",
