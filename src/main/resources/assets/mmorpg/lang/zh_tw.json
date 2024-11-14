@@ -3126,9 +3126,7 @@
     "mmorpg.stat_desc.inc_effect_of_curse_buff_given": "增加你給予的效果強度",
     "mmorpg.stat_desc.inc_effect_of_curse_buff_on_you": "增加你接收的效果強度",
     "mmorpg.stat_desc.inc_effect_of_defensive_buff_given": "提高你賦予的增益效果強度",
-    "mmorpg.stat_desc.inc_effect_of_defensive_buff_on_you": "提高你所受到的增益效果強度"
-    "mmorpg.stat_desc.inc_effect_of_defensive_buff_given": "增加你給予的效果強度",
-    "mmorpg.stat_desc.inc_effect_of_defensive_buff_on_you": "增加你接收的效果強度",
+    "mmorpg.stat_desc.inc_effect_of_defensive_buff_on_you": "提高你所受到的增益效果強度",
     "mmorpg.stat_desc.inc_effect_of_food_buff_given": "增加你給予的效果強度",
     "mmorpg.stat_desc.inc_effect_of_food_buff_on_you": "增加你接收的效果強度",
     "mmorpg.stat_desc.inc_effect_of_golem_buff_given": "增加你給予的效果強度",
