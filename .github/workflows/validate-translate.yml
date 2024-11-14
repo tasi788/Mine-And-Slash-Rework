@@ -1,0 +1,31 @@
+name: Validate JSON Files
+
+on:
+  push:
+    paths:
+      - 'src/main/resources/assets/mmorpg/lang/**.json'
+  pull_request:
+    paths:
+      - 'src/main/resources/assets/mmorpg/lang/**.json'
+
+jobs:
+  validate_json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Validate all JSON files
+        run: |
+          for file in src/main/resources/assets/mmorpg/lang/*.json; do
+            if [[ "$(basename "$file")" == "manual.json" ]]; then
+              echo "Skipping $file"
+              continue
+            fi
+            echo "Validating $file"
+            jq empty "$file"
+          done
