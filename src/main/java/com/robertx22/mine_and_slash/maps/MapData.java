@@ -154,7 +154,7 @@ public class MapData {
         max = MathHelper.clamp(max, 0, 299999 / 2); // don't be higher than normal mc border
 
         while (pos == null || maps.getMap(pos).isPresent() || !border.isWithinBounds(pos)) {
-            if (tries > 200) {
+            if (tries++ > 200) {
                 ExileLog.get().warn("Tried too many times to find random dungeon pos and failed, please delete the map dimension folder");
                 return null;
             }

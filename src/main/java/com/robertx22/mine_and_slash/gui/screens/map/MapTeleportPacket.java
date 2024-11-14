@@ -96,7 +96,11 @@ public class MapTeleportPacket extends MyPacket<MapTeleportPacket> {
 
     @Override
     public void onReceived(ExilePacketContext ctx) {
-        type.teleport((ServerPlayer) ctx.getPlayer());
+
+        Load.Unit(ctx.getPlayer()).getCooldowns().runIfNoCooldownAndSet("map_teleport", 50, () -> {
+            type.teleport((ServerPlayer) ctx.getPlayer());
+        });
+
     }
 
     @Override
