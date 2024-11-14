@@ -16,3 +16,4 @@ Other rooms might have tons of mobs or secret chests, and need way longer to fin
 Also not a perfect system but probably more enjoyable to see your progress from the start
 - added base_stat_percents to gear rar datapacks
 - added cd to map teleport just in case
+- updated translations
