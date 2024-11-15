@@ -1794,6 +1794,46 @@
 "_comment": " [CATEGORY]: FORMATTER - NAMES",
 
 
+"_comment": " [CATEGORY]: GEAR SLOTS - NAMES",
+
+	"mmorpg.gear_type.bow": "Bow",
+	"mmorpg.gear_type.cloth_boots": "Cloth Boots",
+	"mmorpg.gear_type.cloth_chest": "Cloth Chest",
+	"mmorpg.gear_type.cloth_helmet": "Cloth Helmet",
+	"mmorpg.gear_type.cloth_pants": "Cloth Pants",
+	"mmorpg.gear_type.crossbow": "Crossbow",
+	"mmorpg.gear_type.leather_boots": "Leather Boots",
+	"mmorpg.gear_type.leather_chest": "Leather Chest",
+	"mmorpg.gear_type.leather_helmet": "Leather Helmet",
+	"mmorpg.gear_type.leather_pants": "Leather Pants",
+	"mmorpg.gear_type.necklace": "Necklace",
+	"mmorpg.gear_type.plate_boots": "Plate Boots",
+	"mmorpg.gear_type.plate_chest": "Plate Chest",
+	"mmorpg.gear_type.plate_helmet": "Plate Helmet",
+	"mmorpg.gear_type.plate_pants": "Plate Pants",
+	"mmorpg.gear_type.ring": "Ring",
+	"mmorpg.gear_type.shield": "Tower Shield",
+	"mmorpg.gear_type.staff": "Staff",
+	"mmorpg.gear_type.sword": "Sword",
+	"mmorpg.gear_type.tome": "Tome",
+	"mmorpg.gear_type.totem": "Totem",
+	"mmorpg.gearslot.boots": "Boots",
+	"mmorpg.gearslot.bow": "Bow",
+	"mmorpg.gearslot.chest": "Chest",
+	"mmorpg.gearslot.crossbow": "Crossbow",
+	"mmorpg.gearslot.helmet": "Helmet",
+	"mmorpg.gearslot.necklace": "Necklace",
+	"mmorpg.gearslot.pants": "Pants",
+	"mmorpg.gearslot.ring": "Ring",
+	"mmorpg.gearslot.shield": "Shield",
+	"mmorpg.gearslot.staff": "Staff",
+	"mmorpg.gearslot.sword": "Sword",
+	"mmorpg.gearslot.tome": "Tome",
+	"mmorpg.gearslot.totem": "Totem",
+
+"_comment": " [CATEGORY]: GEAR SLOTS - NAMES",
+
+
 "_comment": " [CATEGORY]: UNIQUE ITEMS - NAMES",
 
 	"mmorpg.unique_gear.air_disaster.name": "Aria of Disaster",
@@ -1849,46 +1889,6 @@
 	"mmorpg.unique_gear.witch_brew.name": "Witch's Brew",
 
 "_comment": " [CATEGORY]: UNIQUE ITEMS - NAMES",
-
-
-"_comment": " [CATEGORY]: GEAR SLOTS - NAMES",
-
-	"mmorpg.gear_type.bow": "Bow",
-	"mmorpg.gear_type.cloth_boots": "Cloth Boots",
-	"mmorpg.gear_type.cloth_chest": "Cloth Chest",
-	"mmorpg.gear_type.cloth_helmet": "Cloth Helmet",
-	"mmorpg.gear_type.cloth_pants": "Cloth Pants",
-	"mmorpg.gear_type.crossbow": "Crossbow",
-	"mmorpg.gear_type.leather_boots": "Leather Boots",
-	"mmorpg.gear_type.leather_chest": "Leather Chest",
-	"mmorpg.gear_type.leather_helmet": "Leather Helmet",
-	"mmorpg.gear_type.leather_pants": "Leather Pants",
-	"mmorpg.gear_type.necklace": "Necklace",
-	"mmorpg.gear_type.plate_boots": "Plate Boots",
-	"mmorpg.gear_type.plate_chest": "Plate Chest",
-	"mmorpg.gear_type.plate_helmet": "Plate Helmet",
-	"mmorpg.gear_type.plate_pants": "Plate Pants",
-	"mmorpg.gear_type.ring": "Ring",
-	"mmorpg.gear_type.shield": "Tower Shield",
-	"mmorpg.gear_type.staff": "Staff",
-	"mmorpg.gear_type.sword": "Sword",
-	"mmorpg.gear_type.tome": "Tome",
-	"mmorpg.gear_type.totem": "Totem",
-	"mmorpg.gearslot.boots": "Boots",
-	"mmorpg.gearslot.bow": "Bow",
-	"mmorpg.gearslot.chest": "Chest",
-	"mmorpg.gearslot.crossbow": "Crossbow",
-	"mmorpg.gearslot.helmet": "Helmet",
-	"mmorpg.gearslot.necklace": "Necklace",
-	"mmorpg.gearslot.pants": "Pants",
-	"mmorpg.gearslot.ring": "Ring",
-	"mmorpg.gearslot.shield": "Shield",
-	"mmorpg.gearslot.staff": "Staff",
-	"mmorpg.gearslot.sword": "Sword",
-	"mmorpg.gearslot.tome": "Tome",
-	"mmorpg.gearslot.totem": "Totem",
-
-"_comment": " [CATEGORY]: GEAR SLOTS - NAMES",
 
 
 "_comment": " [CATEGORY]: GEAR ITEMS - NAMES",
@@ -3112,7 +3112,7 @@
 	"mmorpg.stat_desc.beast_cast_time": "Reduces cast time of spells with this tag",
 	"mmorpg.stat_desc.beast_cdr": "Reduces spell cooldown of spells with the tag.",
 	"mmorpg.stat_desc.beast_spell_dmg": "Increases damage of spells with this tag. Totem Damage increases dmg of totems, etc.",
-	"mmorpg.stat_desc.bleed_chance": "Chance to Cause the Ailment on hit. Maximum chance is 100%. Deals 120% of the damage as \u00A76\u2600 Physical\u00A77\u00A79 Damage for 5s.",
+	"mmorpg.stat_desc.bleed_chance": "Chance to Cause the Ailment on Physical  hits. Maximum chance is 100%. Deals 120% of the damage as \u00A76\u2600 Physical\u00A77\u00A79 Damage for 5s.",
 	"mmorpg.stat_desc.bleed_damage": "Increases damage the ailment deals.",
 	"mmorpg.stat_desc.bleed_duration": "Increases duration. For DOTs, this does increase the total damage dealt, but it doesn't increase damage per second.",
 	"mmorpg.stat_desc.bleed_proc_chance": "Procs the accumulated damage of the ailment",
@@ -3128,7 +3128,7 @@
 	"mmorpg.stat_desc.buff_cast_time": "Reduces cast time of spells with this tag",
 	"mmorpg.stat_desc.buff_cdr": "Reduces spell cooldown of spells with the tag.",
 	"mmorpg.stat_desc.buff_spell_dmg": "Increases damage of spells with this tag. Totem Damage increases dmg of totems, etc.",
-	"mmorpg.stat_desc.burn_chance": "Chance to Cause the Ailment on hit. Maximum chance is 100%. Deals 100% of the damage as \u00A7c\u2600 Fire\u00A77\u00A79 Damage for 3s.",
+	"mmorpg.stat_desc.burn_chance": "Chance to Cause the Ailment on Fire  hits. Maximum chance is 100%. Deals 100% of the damage as \u00A7c\u2600 Fire\u00A77\u00A79 Damage for 3s.",
 	"mmorpg.stat_desc.burn_damage": "Increases damage the ailment deals.",
 	"mmorpg.stat_desc.burn_duration": "Increases duration. For DOTs, this does increase the total damage dealt, but it doesn't increase damage per second.",
 	"mmorpg.stat_desc.burn_proc_chance": "Procs the accumulated damage of the ailment",
@@ -3203,7 +3203,7 @@
 	"mmorpg.stat_desc.ele_staff_damage": "Increases elemental damage done if it was caused by that weapon",
 	"mmorpg.stat_desc.ele_sword_damage": "Increases elemental damage done if it was caused by that weapon",
 	"mmorpg.stat_desc.ele_trident_damage": "Increases elemental damage done if it was caused by that weapon",
-	"mmorpg.stat_desc.electrify_chance": "Chance to Cause the Ailment on hit. Maximum chance is 100%. Accumulates 100% of the damage which can be activated with SHOCK to deal bonus \u00A7e\u2600 Lightning\u00A77\u00A79 Damage",
+	"mmorpg.stat_desc.electrify_chance": "Chance to Cause the Ailment on Lightning  hits. Maximum chance is 100%. Accumulates 100% of the damage which can be activated with SHOCK to deal bonus \u00A7e\u2600 Lightning\u00A77\u00A79 Damage",
 	"mmorpg.stat_desc.electrify_damage": "Increases damage the ailment deals.",
 	"mmorpg.stat_desc.electrify_duration": "Increases duration. For DOTs, this does increase the total damage dealt, but it doesn't increase damage per second.",
 	"mmorpg.stat_desc.electrify_proc_chance": "Procs the accumulated damage of the ailment",
@@ -3235,7 +3235,7 @@
 	"mmorpg.stat_desc.fishing_double_drop": "Chance for profession to double the drop, if it happens",
 	"mmorpg.stat_desc.fishing_exp_bonus": "Bonus Profession Exp",
 	"mmorpg.stat_desc.fishing_triple_drop": "Chance for profession to triple the drop, if it happens",
-	"mmorpg.stat_desc.freeze_chance": "Chance to Cause the Ailment on hit. Maximum chance is 100%. Slows Enemy and Accumulates 85% of the damage which can be activated with SHATTER to deal bonus \u00A7b\u2600 Cold\u00A77\u00A79 Damage",
+	"mmorpg.stat_desc.freeze_chance": "Chance to Cause the Ailment on Cold  hits. Maximum chance is 100%. Slows Enemy and Accumulates 85% of the damage which can be activated with SHATTER to deal bonus \u00A7b\u2600 Cold\u00A77\u00A79 Damage",
 	"mmorpg.stat_desc.freeze_damage": "Increases damage the ailment deals.",
 	"mmorpg.stat_desc.freeze_duration": "Increases duration. For DOTs, this does increase the total damage dealt, but it doesn't increase damage per second.",
 	"mmorpg.stat_desc.freeze_proc_chance": "Procs the accumulated damage of the ailment",
@@ -3360,7 +3360,7 @@
 	"mmorpg.stat_desc.physical_spell_dmg": "Increases damage of spells with this tag. Totem Damage increases dmg of totems, etc.",
 	"mmorpg.stat_desc.piercing_projectiles": "Makes spell pierce enemies and keep on",
 	"mmorpg.stat_desc.plus_spell_lvls_desc": "Adds to Spell Levels. Each spell can only have +5 levels above their normal maximum!",
-	"mmorpg.stat_desc.poison_chance": "Chance to Cause the Ailment on hit. Maximum chance is 100%. Deals 150% of the damage as \u00A75\u2600 Chaos\u00A77\u00A79 Damage for 10s.",
+	"mmorpg.stat_desc.poison_chance": "Chance to Cause the Ailment on Chaos  hits. Maximum chance is 100%. Deals 150% of the damage as \u00A75\u2600 Chaos\u00A77\u00A79 Damage for 10s.",
 	"mmorpg.stat_desc.poison_damage": "Increases damage the ailment deals.",
 	"mmorpg.stat_desc.poison_duration": "Increases duration. For DOTs, this does increase the total damage dealt, but it doesn't increase damage per second.",
 	"mmorpg.stat_desc.poison_proc_chance": "Procs the accumulated damage of the ailment",
@@ -3547,13 +3547,6 @@
 "_comment": " [CATEGORY]: SPELLS - DESCRIPTIONS",
 
 
-"_comment": " [CATEGORY]: UBER MAP - DESCRIPTIONS",
-
-	"mmorpg.uber_map.desc.uber1": "A living mortal, in MY Realm?",
-
-"_comment": " [CATEGORY]: UBER MAP - DESCRIPTIONS",
-
-
 "_comment": " [CATEGORY]: STATUSEFFECTS - DESCRIPTIONS",
 
 	"mmorpg.ailment.desc.bleed": "Deals 120% of the damage as \u00A76\u2600 Physical\u00A77\u00A79 Damage for 5s.",
@@ -3563,7 +3556,14 @@
 	"mmorpg.ailment.desc.poison": "Deals 150% of the damage as \u00A75\u2600 Chaos\u00A77\u00A79 Damage for 10s.",
 	"mmorpg.effect.desc.thorn": "Attacking an enemy with Thorns consumes the thorns to deal [calc:thorn_bush] \u00A76\u2600 Physical\u00A77 Damage",
 
-"_comment": " [CATEGORY]: STATUSEFFECTS - DESCRIPTIONS"
+"_comment": " [CATEGORY]: STATUSEFFECTS - DESCRIPTIONS",
+
+
+"_comment": " [CATEGORY]: UBER MAP - DESCRIPTIONS",
+
+	"mmorpg.uber_map.desc.uber1": "A living mortal, in MY Realm?",
+
+"_comment": " [CATEGORY]: UBER MAP - DESCRIPTIONS"
 
 
 }

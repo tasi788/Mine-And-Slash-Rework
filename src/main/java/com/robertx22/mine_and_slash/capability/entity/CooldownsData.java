@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class CooldownsData {
 
     public static String IN_COMBAT = "in_combat";
-   
+
     private HashMap<String, Data> map = new HashMap<>();
 
     public static class Data {
@@ -74,6 +74,15 @@ public class CooldownsData {
 
     public boolean isOnCooldown(String id) {
         return getCooldownTicks(id) > 0;
+    }
+
+    public boolean runIfNoCooldownAndSet(String id, int cdticks, Runnable run) {
+        if (!isOnCooldown(id)) {
+            run.run();
+            setOnCooldown(id, cdticks);
+            return true;
+        }
+        return false;
     }
 
 }
